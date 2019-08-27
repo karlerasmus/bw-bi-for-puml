@@ -4,9 +4,7 @@ SAPEntityColoring(aggregation)
 !define aggregation(e_alias, e_label, e_techn, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, black, aggregation, aggregation)
 
 sprite $attribute [16x16/16z] Oo0QiA3m6DauaRbCh2Xy9cOKFYCr-2oeV4O6P3uJgkE8znK
-SAPEntityColoring(attribute)
-!define attribute(e_alias, e_label, e_techn) SAPEntity(e_alias, e_label, e_techn, black, attribute, attribute)
-!define attribute(e_alias, e_label, e_techn, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, black, attribute, attribute)
+!define attribute(e_label, e_techn) SAPField(e_label, e_techn, black, attribute)
 
 sprite $calcView [16x16/16z] POm53W0n20G92mds__TUpwfJ7OmU87OJPgyB4JzyRgGDKQxVvNw6y-vtjIgwtm3DVzWGGDw3doEuLtLlsJClIJ-Gcv7Fgig8xZ-Rxrm
 SAPEntityColoring(calcView)
@@ -62,9 +60,8 @@ SAPEntityColoring(scriptView)
 !define scriptView(e_alias, e_label, e_techn, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, black, scriptView, scriptView)
 
 sprite $measure [16x16/16z] hSS50S0024JHFyFxrvrR01vwj1lt-YigY2BsVMH5tpxo8YB80Jdoz7FayOTs6m
-SAPEntityColoring(measure)
-!define measure(e_alias, e_label, e_techn) SAPEntity(e_alias, e_label, e_techn, black, measure, measure)
-!define measure(e_alias, e_label, e_techn, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, black, measure, measure)
+!define measure(e_label, e_techn) SAPField(e_label, e_techn, black, measure)
+
 
 sprite $outerJoin [16x16/16z] {
 bKvL0e9X35e0i-z_NFdqoVPVzuZjL1ZKpQmiXGnAZ8GoGkq9LSlTbeSzGnje1OdAp76lBWuAi_9TcCuh7tHLxShXnK6psDrY9kM05K8t1Doz_my1IhATVCBt
@@ -136,5 +133,5 @@ SAPEntityColoring(Join)
 
 sprite $view [16x16/16z] ROo54G0m20Fn_JUkA_3Lo04EU-aQ4SyPckYSf2_jSCku_xT-2iBSz1quyZimxz-X8mzwb9Y7xWoJHZu8UWDG0G
 SAPEntityColoring(view)
-!define view(e_alias, e_label, e_techn) SAPEntity(e_alias, e_label, e_techn, black, view, view)
-!define view(e_alias, e_label, e_techn, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, black, view, view)
+!define view(e_alias, e_label, e_techn) SAPClass(e_alias, e_label, e_techn, black, view, view)
+!define view(e_alias, e_label, e_techn, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, black, view, view)
