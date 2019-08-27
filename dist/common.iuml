@@ -49,13 +49,13 @@ rectangle "<color:e_color><$e_sprite></color><b>e_label</b>\n//<size:$TECHN_FONT
 !enddefinelong
 
 !definelong SAPClass(e_alias, e_label, e_techn, e_color, e_sprite, e_stereo)
-class "<color:e_color><$e_sprite></color><b>e_label</b>\n//<size:$TECHN_FONT_SIZE>[e_techn]</size>//" <<e_stereo>> as e_alias
+class "<color:e_color><$e_sprite></color><b>e_label</b>\n//<size:$TECHN_FONT_SIZE>[e_techn]</size>//" as e_alias <<e_stereo>>
 !enddefinelong
 
 !definelong SAPClass(e_alias, e_label, e_techn, e_descr, e_color, e_sprite, e_stereo)
-class "<color:e_color><$e_sprite></color><b>e_label</b>\n//<size:$TECHN_FONT_SIZE>[e_techn]</size>//\n\n e_descr" <<e_stereo>> as e_alias
+class "<color:e_color><$e_sprite></color><b>e_label</b>\n//<size:$TECHN_FONT_SIZE>[e_techn]</size>//\n\n e_descr" as e_alias <<e_stereo>>
 !enddefinelong
 
 !definelong SAPField(e_label, e_techn, e_color, e_sprite)
-{field} <color:e_color><$e_sprite></color>\te_label [e_techn]
+{field} <color:e_color><$e_sprite></color>\t e_label [e_techn]
 !enddefinelong
