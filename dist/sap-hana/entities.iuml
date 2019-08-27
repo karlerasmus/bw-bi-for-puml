@@ -1,0 +1,140 @@
+sprite $aggregation [16x16/16z] JSk50KGX30JHsH2y_tvlppDVu26KXgisYg_JttdX_iyd5rs2-IgbwuZPWDQdbFZz-lmyEdtCgSmi-zD06VM-twJOKQmEVuVvjb2R9zv4yxZPadSF
+SAPEntityColoring(aggregation)
+!define aggregation(e_alias, e_label, e_techn) SAPEntity(e_alias, e_label, e_techn, black, aggregation, aggregation)
+!define aggregation(e_alias, e_label, e_techn, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, black, aggregation, aggregation)
+
+sprite $attribute [16x16/16z] Oo0QiA3m6DauaRbCh2Xy9cOKFYCr-2oeV4O6P3uJgkE8znK
+SAPEntityColoring(attribute)
+!define attribute(e_alias, e_label, e_techn) SAPEntity(e_alias, e_label, e_techn, black, attribute, attribute)
+!define attribute(e_alias, e_label, e_techn, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, black, attribute, attribute)
+
+sprite $calcView [16x16/16z] POm53W0n20G92mds__TUpwfJ7OmU87OJPgyB4JzyRgGDKQxVvNw6y-vtjIgwtm3DVzWGGDw3doEuLtLlsJClIJ-Gcv7Fgig8xZ-Rxrm
+SAPEntityColoring(calcView)
+!define calcView(e_alias, e_label, e_techn) SAPEntity(e_alias, e_label, e_techn, black, calcView, calcView)
+!define calcView(e_alias, e_label, e_techn, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, black, calcView, calcView)
+
+sprite $analyticView [16x16/16z] dSsr0K0n30DHsr9W_uN3M7suxbKd_rApYyNG0NGRq4reDNmS9g764BTPTTh7RKo7EUZ6tXTxEQF9kp8
+SAPEntityColoring(analyticView)
+!define analyticView(e_alias, e_label, e_techn) SAPEntity(e_alias, e_label, e_techn, black, analyticView, analyticView)
+!define analyticView(e_alias, e_label, e_techn, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, black, analyticView, analyticView)
+
+sprite $decisionTable [18x18/16z] hSe53e1050FHFyNX_kV5LwChayPUQlqQGhyezCiM-cLyPoECiHoaSiC1yl8yuD2OVIH5CZwFM1XH8Y6hxW8
+SAPEntityColoring(decisionTable)
+!define decisionTable(e_alias, e_label, e_techn) SAPEntity(e_alias, e_label, e_techn, black, decisionTable, decisionTable)
+!define decisionTable(e_alias, e_label, e_techn, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, black, decisionTable, decisionTable)
+
+sprite $dimension [16x16/16z] TSg54GH034BHGDRxB_W2vyRePrxy7FfRvZc1Ht7j2V16qCP0O1JnMeU9Jf5i8hFERf9PX2PkvftKeUQLL2yrH90-TdWaKaUdIWJCTYy_vBtkvCyk
+SAPEntityColoring(dimension)
+!define dimension(e_alias, e_label, e_techn) SAPEntity(e_alias, e_label, e_techn, black, dimension, dimension)
+!define dimension(e_alias, e_label, e_techn, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, black, dimension, dimension)
+
+sprite $function [15x15/16z] HOu50WCm20CXeJRz_syNLhig7jlKn6mizFKqtJrFSqTB4yZJm4XpqLhhCaDjg4HszBZc0D1baaRofQFxHD-otZUPxtZ7IKQjtrflzAzgcG2MgbWiLHk9ageV
+
+sprite $tableFunction [16x16/16z] TSvL0e0W44NHQTlzxvPuTd2LEFC5VJAF8r2rd0YdlstQqrIZ7aELUYvbmLxCJ0i_p6jPXuVTmsNKz1uSRg9cVZpA0Ww7CAWP_PS1
+SAPEntityColoring(tableFunction)
+!define tableFunction(e_alias, e_label, e_techn) SAPEntity(e_alias, e_label, e_techn, black, tableFunction, tableFunction)
+!define tableFunction(e_alias, e_label, e_techn, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, black, tableFunction, tableFunction)
+
+sprite $scalarFunction [16x16/16z] TSc53G0n34DHfs4r-wzxpF25pyOhKTjRo6nO-xGAEz1x1tmnjm0AKx6RgAfk9YgY-tywQIt_lBTOfB68AjP4LmkEOKxmtGW
+SAPEntityColoring(scalarFunction)
+!define scalarFunction(e_alias, e_label, e_techn) SAPEntity(e_alias, e_label, e_techn, black, scalarFunction, scalarFunction)
+!define scalarFunction(e_alias, e_label, e_techn, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, black, scalarFunction, scalarFunction)
+
+sprite $innerJoin [16x16/16z] {
+bKs74SD037e1_YBflF-u8HuW1VNA-1_1Yu1TF9KuXhhiANSct6kfd6DwsJlpa5DE60g7l4YTvtY6uVNtWJ45-rpIJ2SG263Ld5jEJBdeSESkE2w_s2BctGAr
+OnZG4XutlkC5
+}
+SAPEntityColoring(innerJoin)
+!define innerJoin(e_alias, e_label, e_techn) SAPEntity(e_alias, e_label, e_techn, black, innerJoin, innerJoin)
+!define innerJoin(e_alias, e_label, e_techn, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, black, innerJoin, innerJoin)
+
+sprite $leftJoin [16x16/16z] {
+bKyt0iD02BCQFjV_FpSmPKsqq96q_GzcXPI5gT05SXpirDrP0dXOQuRfPG2rawLPHjXObhJFWjVKHzS-fauqyx8pSvWrgqUo6m2nhVJkk-f0ethbwELw3m4g
+VFMvZ1_CV
+}
+SAPEntityColoring(leftJoin)
+!define leftJoin(e_alias, e_label, e_techn) SAPEntity(e_alias, e_label, e_techn, black, leftJoin, leftJoin)
+!define leftJoin(e_alias, e_label, e_techn, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, black, leftJoin, leftJoin)
+
+sprite $scriptView [15x15/16z] XSc50G0X241HMs3_VSdh_ERJz5zV6c1gQIdODxhoKZoFbIDOo2iheuLp_PqBb-PTEy64Y02sADqJ
+SAPEntityColoring(scriptView)
+!define scriptView(e_alias, e_label, e_techn) SAPEntity(e_alias, e_label, e_techn, black, scriptView, scriptView)
+!define scriptView(e_alias, e_label, e_techn, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, black, scriptView, scriptView)
+
+sprite $measure [16x16/16z] hSS50S0024JHFyFxrvrR01vwj1lt-YigY2BsVMH5tpxo8YB80Jdoz7FayOTs6m
+SAPEntityColoring(measure)
+!define measure(e_alias, e_label, e_techn) SAPEntity(e_alias, e_label, e_techn, black, measure, measure)
+!define measure(e_alias, e_label, e_techn, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, black, measure, measure)
+
+sprite $outerJoin [16x16/16z] {
+bKvL0e9X35e0i-z_NFdqoVPVzuZjL1ZKpQmiXGnAZ8GoGkq9LSlTbeSzGnje1OdAp76lBWuAi_9TcCuh7tHLxShXnK6psDrY9kM05K8t1Doz_my1IhATVCBt
+cwu
+}
+SAPEntityColoring(outerJoin)
+!define outerJoin(e_alias, e_label, e_techn) SAPEntity(e_alias, e_label, e_techn, black, outerJoin, outerJoin)
+!define outerJoin(e_alias, e_label, e_techn, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, black, outerJoin, outerJoin)
+
+sprite $package [16x16/16z] ZSv50aGn20FGkW3tF-yqcU-UnQiNtCVOEas8KAwpTouMaBc6eO3hTOaX90M5FqifHLM7mYeLNoce3cdB-tQzvbVWlqvjH40wzN_A3m
+SAPEntityColoring(package)
+!define package(e_alias, e_label, e_techn) SAPEntity(e_alias, e_label, e_techn, black, package, package)
+!define package(e_alias, e_label, e_techn, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, black, package, package)
+
+sprite $procedure [16x16/16z] {
+JOw50G0X30CheJZxZ_la_T1wv2KH-GZTXnyBOeyDDwMtx4_PduRRhgNGZW0WG3HjGXj-nhkQZSyUJiONdm1-SOk9-QzFiKvzBL60uj7ZGG68LwytSklxABMM
+n_uu
+}
+SAPEntityColoring(procedure)
+!define procedure(e_alias, e_label, e_techn) SAPEntity(e_alias, e_label, e_techn, black, procedure, procedure)
+!define procedure(e_alias, e_label, e_techn, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, black, procedure, procedure)
+
+sprite $projection [15x15/16z] VOa50i0m2CGArEN_tztkvffgYBjZAwkkxw4vv-1-QoLKKDCCLL03Pe4AWXjZKKMDc4KgY3g6ngDoTbH03SJS2nC
+SAPEntityColoring(projection)
+!define projection(e_alias, e_label, e_techn) SAPEntity(e_alias, e_label, e_techn, black, projection, projection)
+!define projection(e_alias, e_label, e_techn, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, black, projection, projection)
+
+sprite $rank [16x16/16z] TSsr0G0n4CJ0FJBrtwyP7fLD981kGLisSguQBUgnu-v5ZitEkQ7ZIKuC8m2JqkrwZJUBJACdssxrOwn4grqVzRJRnPXsU5O
+SAPEntityColoring(rank)
+!define rank(e_alias, e_label, e_techn) SAPEntity(e_alias, e_label, e_techn, black, rank, rank)
+!define rank(e_alias, e_label, e_techn, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, black, rank, rank)
+
+sprite $rightJoin [16x16/16z] {
+bSx5eGCm30DGIORO7xh_k0qKReLtIipu7irDYWhjNn1GTt2620IcCc-HLY3drr8QIJBa9orvIRBOvMrJQohdohjxd3n5qjEzngn98JbrZekRHG4SHbfVPaas
+CQtovtrlN04
+}
+SAPEntityColoring(rightJoin)
+!define rightJoin(e_alias, e_label, e_techn) SAPEntity(e_alias, e_label, e_techn, black, rightJoin, rightJoin)
+!define rightJoin(e_alias, e_label, e_techn, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, black, rightJoin, rightJoin)
+
+sprite $schema [16x16/16z] XOi53iLG3CESPf76zx_j60GVx3ueyOMGDblSURi9zUHXfAfjtxpTyhppfDszyv6RjAVZPhXv1kLTGcDlWG34Z47QylC9bbG-owB5gChdlWZZlj_mXnK
+SAPEntityColoring(schema)
+!define schema(e_alias, e_label, e_techn) SAPEntity(e_alias, e_label, e_techn, black, schema, schema)
+!define schema(e_alias, e_label, e_techn, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, black, schema, schema)
+
+sprite $starJoin [16x16/16z] fOv70eG030BJiwl-_xiMi5_DQT80SuyI5314jTa3tttrMkmFJBOdZ68ErP7zD1dEypmCvVNPmnw8-p9LDJFsBHMsTT1x-NtDlm
+SAPEntityColoring(starJoin)
+!define starJoin(e_alias, e_label, e_techn) SAPEntity(e_alias, e_label, e_techn, black, starJoin, starJoin)
+!define starJoin(e_alias, e_label, e_techn, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, black, starJoin, starJoin)
+
+sprite $table [16x16/16z] dOg50S10308fLzj_uRhBsyK3Uj5VcM_RHoqt7FNXRwQYibdtzmq23AWfzVlGt_SLnHW1
+SAPEntityColoring(table)
+!define table(e_alias, e_label, e_techn) SAPEntity(e_alias, e_label, e_techn, black, table, table)
+!define table(e_alias, e_label, e_techn, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, black, table, table)
+
+sprite $virtualTable [16x16/16z] ROe73i0m309Z27Aryl_dbhXxdEHnWlPXkJCz8iuf1yxvwNSFdN7_Fqusal3SSetnw2Vqw0kwztEovpBPWYbZXqcWUm0NAYTxvOURyXK
+SAPEntityColoring(virtualTable)
+!define virtualTable(e_alias, e_label, e_techn) SAPEntity(e_alias, e_label, e_techn, black, virtualTable, virtualTable)
+!define virtualTable(e_alias, e_label, e_techn, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, black, virtualTable, virtualTable)
+
+sprite $unknownJoin [16x16/16z] {
+bKk55G9H36iZN_VVbxmR0BXw8_K-MaD0HZ_V48CCDpM2J5LnIejLceMyPQT7PRIODJEuAiCJMGlTs3ampUvU6TevQ3XhE3ro6BKL-4WtM_7qCU5x1-ZJbO2N
+yOpw7Hy
+}
+SAPEntityColoring(Join)
+!define Join(e_alias, e_label, e_techn) SAPEntity(e_alias, e_label, e_techn, black, unknownJoin, Join)
+!define Join(e_alias, e_label, e_techn, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, black, unknownJoin, Join)
+
+
+sprite $view [16x16/16z] ROo54G0m20Fn_JUkA_3Lo04EU-aQ4SyPckYSf2_jSCku_xT-2iBSz1quyZimxz-X8mzwb9Y7xWoJHZu8UWDG0G
+SAPEntityColoring(view)
+!define view(e_alias, e_label, e_techn) SAPEntity(e_alias, e_label, e_techn, black, view, view)
+!define view(e_alias, e_label, e_techn, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, black, view, view)
