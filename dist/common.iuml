@@ -18,7 +18,7 @@ skinparam defaultFontName "Tahoma"
 
 skinparam defaultTextAlignment center
 skinparam shadowing false
-skinparam wrapWidth 200
+skinparam wrapWidth 400
 skinparam maxMessageSize 150
 
 skinparam rectangle {
