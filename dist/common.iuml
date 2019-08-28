@@ -1,5 +1,7 @@
 'SPDX-License-Identifier: GPL-3.0-or-later
 
+allow_mixing
+
 ' Colors
 ' ##################################
 !$SAP_COLOR = "#232F3E"

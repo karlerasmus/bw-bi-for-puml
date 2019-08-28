@@ -73,10 +73,10 @@ SAPEntityColoring(infoobject)
 !define infoobject(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, black, infoobject, infoobject)
 
 sprite $kyf [16x14/16z] TOh55S1058GcmddwhpQohgpoFle1jH3srWbNwox4YNKGTlO3mdPGcKZqjW_QzY5hU_MzXZvwGIy
-!define measure(e_label, e_techn) SAPField(e_label, e_techn, #229954, kyf)
+!define kyf(e_label, e_techn) SAPField(e_label, e_techn, #229954, kyf)
 
 sprite $cha [16x14/16z] TSj15i0G54DHa77slre805xRSlt3A8oQn_lnI2ItEIru6YtH0cppqs9sko73vuT6TOu3DlhkaPW
-!define measure(e_label, e_techn) SAPField(e_label, e_techn, #229954, cha)
+!define cha(e_label, e_techn) SAPField(e_label, e_techn, #229954, cha)
 
 sprite $analysisProcess [16x14/16z] JOo53SL03CKSAVaWwlxRzfsBFdI85mMyjGVe_q6qlnC5KJUYsZ1BNyvIwoqU4ESjpzCWKGkkm0XEgwf6z5ZDhKtKKTAyyx83
 SAPEntityColoring(analysisProcess)
