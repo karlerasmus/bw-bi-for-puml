@@ -105,6 +105,20 @@ class "<color:e_color><$e_sprite></color><b>e_label</b>\n//<size:$TECHN_FONT_SIZ
 {field} <color:e_color><$e_sprite></color>\t e_label [e_techn]
 !enddefinelong
 
+
+!definelong component(e_label, e_techn)
+component "<b>e_label</b>\n//<size:$TECHN_FONT_SIZE>[e_techn]</size>//" as e_techn
+!enddefinelong
+
+!definelong component(e_label, e_techn, e_alias)
+component "<b>e_label</b>\n//<size:$TECHN_FONT_SIZE>[e_techn]</size>//" as e_alias
+!enddefinelong
+
+!definelong component(e_label, e_techn, e_alias, e_descr)
+component "<b>e_label</b>\n//<size:$TECHN_FONT_SIZE>[e_techn]</size>//\n\n e_descr" as e_alias
+!enddefinelong
+
+
 sprite $sapSystem [16x14/16z] ZST70e1020J1pHpd_xzr6lD9UmDK-KZlkaftbP5JVT8n-jDmFWpBmz2k3iEdJJmf1DD7y4yR
 SAPEntityColoring(sapSystem)
 !define sapSystem(e_label, e_techn) SAPEntity(e_techn, e_label, e_techn, #154360, sapSystem, sapSystem)
