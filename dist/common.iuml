@@ -14,6 +14,8 @@ allow_mixing
 
 !$TECHN_FONT_SIZE = 12
 
+skinparam defaultFontName "Tahoma"
+
 skinparam defaultTextAlignment center
 skinparam shadowing false
 skinparam wrapWidth 200
@@ -59,6 +61,12 @@ skinparam package {
   roundCorner 5
 }
 
+skinparam node {
+  BorderColor $SAP_BORDER_COLOR
+  BackgroundColor $SAP_BG_COLOR
+  roundCorner 5
+}
+
 skinparam sameClassWidth true
 
 !definelong SAPEntityColoring(stereo)
@@ -96,3 +104,9 @@ class "<color:e_color><$e_sprite></color><b>e_label</b>\n//<size:$TECHN_FONT_SIZ
 !definelong SAPField(e_label, e_techn, e_color, e_sprite)
 {field} <color:e_color><$e_sprite></color>\t e_label [e_techn]
 !enddefinelong
+
+sprite $sapSystem [16x14/16z] ZST70e1020J1pHpd_xzr6lD9UmDK-KZlkaftbP5JVT8n-jDmFWpBmz2k3iEdJJmf1DD7y4yR
+SAPEntityColoring(sapSystem)
+!define sapSystem(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, #154360, sapSystem, sapSystem)
+!define sapSystem(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, #154360, sapSystem, sapSystem)
+!define sapSystem(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, #154360, sapSystem, sapSystem)
