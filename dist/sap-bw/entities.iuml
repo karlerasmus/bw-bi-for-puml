@@ -2,90 +2,90 @@
 
 sprite $dataSource [16x14/16z] HOm53W0n3CDwwK2S___svc66Zgp6YUsC5tES3sNHp7ImoXHRjgeLRVEd45ZXKWOh0aIbi2HmCuFK-EDJfE_ecUpSS6RaY3VZ8SDNUV03
 SAPEntityColoring(dataSource)
-!define dataSource(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, black, dataSource, dataSource)
-!define dataSource(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, black, dataSource, dataSource)
-!define dataSource(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, black, dataSource, dataSource)
+!define dataSource(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, #154360, dataSource, dataSource)
+!define dataSource(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, #154360, dataSource, dataSource)
+!define dataSource(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, #154360, dataSource, dataSource)
 
 sprite $sourceSystem [16x14/16z] POt55G0W5CE2tDb_Mrvm2VgjfLn0uU29Kuzp1kyH--rdn0Q6EyRmh__pl_xldrBoByPYF3-Cdlwl
 SAPEntityColoring(sourceSystem)
-!define sourceSystem(e_label, e_techn) SAPEntity(e_techn, e_label, e_techn, black, sourceSystem, sourceSystem)
-!define sourceSystem(e_label, e_techn, e_alias) SAPEntity(e_alias, e_label, e_techn, black, sourceSystem, sourceSystem)
-!define sourceSystem(e_label, e_techn, e_alias, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, black, sourceSystem, sourceSystem)
+!define sourceSystem(e_label, e_techn) SAPEntity(e_techn, e_label, e_techn, #154360, sourceSystem, sourceSystem)
+!define sourceSystem(e_label, e_techn, e_alias) SAPEntity(e_alias, e_label, e_techn, #154360, sourceSystem, sourceSystem)
+!define sourceSystem(e_label, e_techn, e_alias, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, #154360, sourceSystem, sourceSystem)
 
 sprite $psa [16x14/16z] ZSs54S10449Hc2s0_gkD_BZUlT5LDAcW95I4hH6jzlvzRvMjNzZl7NZVDxhl5Npck-3ztc1l1
 SAPEntityColoring(psa)
-!define psa(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, black, psa, psa)
-!define psa(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, black, psa, psa)
-!define psa(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, black, psa, psa)
+!define psa(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, #154360, psa, psa)
+!define psa(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, #154360, psa, psa)
+!define psa(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, #154360, psa, psa)
 
 sprite $dso [16x14/16z] dSut5WCX40HHpVJhkEv_MZo9fBM5_KHyVfFfMLCGqSu8w2zqp89kUo9WM59AO6kwRPdIImioXs7_g3TrMGK
 SAPEntityColoring(dso)
-!define dso(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, black, dso, dso)
-!define dso(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, black, dso, dso)
-!define dso(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, black, dso, dso)
+!define dso(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, #154360, dso, dso)
+!define dso(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, #154360, dso, dso)
+!define dso(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, #154360, dso, dso)
 
 sprite $cube [16x14/16z] ZSct5G1120FHzIQY_svFzyJaguZv52t-zS9YQhKYeHlXQxcX77pdTO-KIrikxTs7ZgvES6hTGYBE10dv0G
 SAPEntityColoring(cube)
-!define cube(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, black, cube, cube)
-!define cube(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, black, cube, cube)
-!define cube(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, black, cube, cube)
+!define cube(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, #154360, cube, cube)
+!define cube(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, #154360, cube, cube)
+!define cube(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, #154360, cube, cube)
 
 sprite $multi [16x14/16z] NObL0e0m3CNQ2VAL-z-MuB2tMh8mG3jM7A5dL-2Kzds8Yzd99bq4xVZEzM75WRtva1Nhoe6DGB7ALq8XkqtE3iM1cN1gg61wFNckZbhxpGmSK8gCk04
 SAPEntityColoring(multi)
-!define multi(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, black, multi, multi)
-!define multi(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, black, multi, multi)
-!define multi(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, black, multi, multi)
+!define multi(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, #154360, multi, multi)
+!define multi(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, #154360, multi, multi)
+!define multi(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, #154360, multi, multi)
 
 sprite $transformation [16x14/16z] LSwt4G0n30F1jp7xxrQuePVb8iArbcbDtY99yCStJz3D1yiaSFfV3eR5PTisYebXYwfXPoIxltG
 SAPEntityColoring(transformation)
-!define transformation(e_label, e_techn) SAPEntity(e_techn, e_label, e_techn, black, transformation, transformation)
-!define transformation(e_label, e_techn, e_alias) SAPEntity(e_alias, e_label, e_techn, black, transformation, transformation)
-!define transformation(e_label, e_techn, e_alias, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, black, transformation, transformation)
+!define transformation(e_label, e_techn) SAPEntity(e_techn, e_label, e_techn, #154360, transformation, transformation)
+!define transformation(e_label, e_techn, e_alias) SAPEntity(e_alias, e_label, e_techn, #154360, transformation, transformation)
+!define transformation(e_label, e_techn, e_alias, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, #154360, transformation, transformation)
 
 sprite $infopackage [16x14/16z] TO_L3K1H2CKEJVZk_jC-T-bL718zIM8EkesfWrbs_ZYjKnOL3nb9oIuhJ98U_b7ZQI-4quuLv9N_h_x19CR7E2C
 SAPEntityColoring(infopackage)
-!define infopackage(e_label, e_techn) SAPEntity(e_techn, e_label, e_techn, black, infopackage, infopackage)
-!define infopackage(e_label, e_techn, e_alias) SAPEntity(e_alias, e_label, e_techn, black, infopackage, infopackage)
-!define infopackage(e_label, e_techn, e_alias, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, black, infopackage, infopackage)
+!define infopackage(e_label, e_techn) SAPEntity(e_techn, e_label, e_techn, #154360, infopackage, infopackage)
+!define infopackage(e_label, e_techn, e_alias) SAPEntity(e_alias, e_label, e_techn, #154360, infopackage, infopackage)
+!define infopackage(e_label, e_techn, e_alias, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, #154360, infopackage, infopackage)
 
 sprite $dtp [16x16/16z] PO_50G0n40BX_4V_tLuyAxElWIWICbJZvXQ4pLtTrik_Yd56f_6h3BdyabI3uLVTqOBHzwdatkxlZdv-TwNluGS
 SAPEntityColoring(dtp)
-!define dtp(e_label, e_techn) SAPEntity(e_techn, e_label, e_techn, black, dtp, dtp)
-!define dtp(e_label, e_techn, e_alias) SAPEntity(e_alias, e_label, e_techn, black, dtp, dtp)
-!define dtp(e_label, e_techn, e_alias, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, black, dtp, dtp)
+!define dtp(e_label, e_techn) SAPEntity(e_techn, e_label, e_techn, #154360, dtp, dtp)
+!define dtp(e_label, e_techn, e_alias) SAPEntity(e_alias, e_label, e_techn, #154360, dtp, dtp)
+!define dtp(e_label, e_techn, e_alias, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, #154360, dtp, dtp)
 
 sprite $infoset [16x14/16z] TSwr0S10241HBFNVVzhOkRqEHrP1vujKtwoYX2Ae9EZhZU4FjSJk92L-YsP-yMknkoDohkTx0MOfVj7-At6nnBy7
 SAPEntityColoring(infoset)
-!define infoset(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, black, infoset, infoset)
-!define infoset(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, black, infoset, infoset)
-!define infoset(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, black, infoset, infoset)
+!define infoset(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, #154360, infoset, infoset)
+!define infoset(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, #154360, infoset, infoset)
+!define infoset(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, #154360, infoset, infoset)
 
 sprite $compositeProvider [16x14/16z] O-070GO40B4n-J1b23uZ8oE43mHmFXnWyX7M4BOHg1Mc3C77j96P6Q4DbOzG1W
 SAPEntityColoring(compositeProvider)
-!define compositeProvider(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, black, compositeProvider, compositeProvider)
-!define compositeProvider(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, black, compositeProvider, compositeProvider)
-!define compositeProvider(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, black, compositeProvider, compositeProvider)
+!define compositeProvider(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, #154360, compositeProvider, compositeProvider)
+!define compositeProvider(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, #154360, compositeProvider, compositeProvider)
+!define compositeProvider(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, #154360, compositeProvider, compositeProvider)
 
 sprite $infoobject [16x14/16z] RSl50K0X30DGz9pzjqNhpHTubN8pET_qvWRCFCg0wZjlbZ7-XZBrDxS7lF_yPjyv0pVOFDacwW9KZXS
 SAPEntityColoring(infoobject)
-!define infoobject(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, black, infoobject, infoobject)
-!define infoobject(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, black, infoobject, infoobject)
-!define infoobject(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, black, infoobject, infoobject)
+!define infoobject(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, #154360, infoobject, infoobject)
+!define infoobject(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, #154360, infoobject, infoobject)
+!define infoobject(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, #154360, infoobject, infoobject)
 
 sprite $kyf [16x14/16z] TOh55S1058GcmddwhpQohgpoFle1jH3srWbNwox4YNKGTlO3mdPGcKZqjW_QzY5hU_MzXZvwGIy
-!define kyf(e_label, e_techn) SAPField(e_label, e_techn, #229954, kyf)
+!define kyf(e_label, e_techn) SAPField(e_label, e_techn, XZBrDxS7lF_yPjyv0pVOFDacwW9KZXS, kyf)
 
 sprite $cha [16x14/16z] TSj15i0G54DHa77slre805xRSlt3A8oQn_lnI2ItEIru6YtH0cppqs9sko73vuT6TOu3DlhkaPW
-!define cha(e_label, e_techn) SAPField(e_label, e_techn, #229954, cha)
+!define cha(e_label, e_techn) SAPField(e_label, e_techn, #154360, cha)
 
 sprite $analysisProcess [16x14/16z] JOo53SL03CKSAVaWwlxRzfsBFdI85mMyjGVe_q6qlnC5KJUYsZ1BNyvIwoqU4ESjpzCWKGkkm0XEgwf6z5ZDhKtKKTAyyx83
 SAPEntityColoring(analysisProcess)
-!define analysisProcess(e_label, e_techn) SAPEntity(e_techn, e_label, e_techn, black, analysisProcess, analysisProcess)
-!define analysisProcess(e_label, e_techn, e_alias) SAPEntity(e_alias, e_label, e_techn, black, analysisProcess, analysisProcess)
-!define analysisProcess(e_label, e_techn, e_alias, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, black, analysisProcess, analysisProcess)
+!define analysisProcess(e_label, e_techn) SAPEntity(e_techn, e_label, e_techn, #154360, analysisProcess, analysisProcess)
+!define analysisProcess(e_label, e_techn, e_alias) SAPEntity(e_alias, e_label, e_techn, #154360, analysisProcess, analysisProcess)
+!define analysisProcess(e_label, e_techn, e_alias, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, #154360, analysisProcess, analysisProcess)
 
 sprite $infoSource [16x14/16z] FSh13G0n3091JbZ-flzk3sUjy9iLodncLWOrey2lNu5Tfi2ADtnAY6lOE8CLSuJONewFxzINbhSi9LDwkIM6hy0V
 SAPEntityColoring(infoSource)
-!define infoSource(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, black, infoSource, infoSource)
-!define infoSource(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, black, infoSource, infoSource)
-!define infoSource(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, black, infoSource, infoSource)
+!define infoSource(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, #154360, infoSource, infoSource)
+!define infoSource(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, #154360, infoSource, infoSource)
+!define infoSource(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, #154360, infoSource, infoSource)

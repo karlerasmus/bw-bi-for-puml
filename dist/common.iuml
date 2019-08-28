@@ -4,9 +4,9 @@ allow_mixing
 
 ' Colors
 ' ##################################
-!$SAP_COLOR = "#232F3E"
-!$SAP_BG_COLOR =  "#FFFFFF"
-!$SAP_BORDER_COLOR = "#666666"
+!$SAP_COLOR = "#154360"
+!$SAP_BG_COLOR =  "#FDFEFE"
+!$SAP_BORDER_COLOR = "#7B7D7D"
 !$SAP_SYMBOL_COLOR = $SAP_COLOR
 
 ' Styling
@@ -28,6 +28,38 @@ skinparam Arrow {
     FontColor #666666
     FontSize 12
 }
+
+skinparam component {
+  BorderColor $SAP_BORDER_COLOR
+  BackgroundColor $SAP_BG_COLOR
+  roundCorner 5
+}
+
+skinparam folder {
+  BorderColor $SAP_BORDER_COLOR
+  BackgroundColor $SAP_BG_COLOR
+  roundCorner 5
+}
+
+skinparam class {
+  BorderColor $SAP_BORDER_COLOR
+  BackgroundColor $SAP_BG_COLOR
+  roundCorner 5
+}
+
+skinparam database {
+  BorderColor $SAP_BORDER_COLOR
+  BackgroundColor $SAP_BG_COLOR
+  roundCorner 5
+}
+
+skinparam package {
+  BorderColor $SAP_BORDER_COLOR
+  BackgroundColor $SAP_BG_COLOR
+  roundCorner 5
+}
+
+skinparam sameClassWidth true
 
 !definelong SAPEntityColoring(stereo)
 skinparam rectangle<<stereo>> {
