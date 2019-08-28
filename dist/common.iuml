@@ -107,6 +107,6 @@ class "<color:e_color><$e_sprite></color><b>e_label</b>\n//<size:$TECHN_FONT_SIZ
 
 sprite $sapSystem [16x14/16z] ZST70e1020J1pHpd_xzr6lD9UmDK-KZlkaftbP5JVT8n-jDmFWpBmz2k3iEdJJmf1DD7y4yR
 SAPEntityColoring(sapSystem)
-!define sapSystem(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, #154360, sapSystem, sapSystem)
-!define sapSystem(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, #154360, sapSystem, sapSystem)
-!define sapSystem(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, #154360, sapSystem, sapSystem)
+!define sapSystem(e_label, e_techn) SAPEntity(e_techn, e_label, e_techn, #154360, sapSystem, sapSystem)
+!define sapSystem(e_label, e_techn, e_alias) SAPEntity(e_alias, e_label, e_techn, #154360, sapSystem, sapSystem)
+!define sapSystem(e_label, e_techn, e_alias, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, #154360, sapSystem, sapSystem)
