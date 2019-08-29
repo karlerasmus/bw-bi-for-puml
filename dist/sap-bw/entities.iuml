@@ -78,6 +78,44 @@ sprite $kyf [16x14/16z] TOh55S1058GcmddwhpQohgpoFle1jH3srWbNwox4YNKGTlO3mdPGcKZq
 sprite $cha [16x14/16z] TSj15i0G54DHa77slre805xRSlt3A8oQn_lnI2ItEIru6YtH0cppqs9sko73vuT6TOu3DlhkaPW
 !define cha(e_label, e_techn) SAPField(e_label, e_techn, #154360, cha)
 
+sprite $uni [16x14/16z] POg53S104CDSF77stxPAIWz-j7o4u-FnPZExrCsBNMqNj2wgQEOhV5tbZduFUkO5xkMF4MNYKT9XLxp1VW4
+!define uni(e_label, e_techn) SAPField(e_label, e_techn, #154360, uni)
+
+sprite $direct [16x14/16z] Ow0-u8S3T3x9wYa7
+!define rule1to1(e_out, e_in) SAPRule(1to1, e_out, e_in, #154360, direct)
+
+sprite $abap [16x14/16z] dSor0G0W30H07BhiForEjEEwoBzBItCejGdITMPunxndyDUUx_NTv-ZJCsStE_ppvhRD-UTk-v6T1m
+!define ruleAbap(e_out, e_in) SAPRule(abapRoutine, e_out, e_in, #154360, abap)
+
+!define ruleStart() SAPRule(startRoutine, void, "[]", #154360, abap)
+!define ruleEnd() SAPRule(endRoutine, void, "[]", #154360, abap)
+!define ruleExpert() SAPRule(expertRoutine, void, "[]", #154360, abap)
+
+sprite $constant [16x14/16z] TSi73aGX409GH2FfS__RRgRjxrWVoU0ZD4z1KdodfG34Roq3H9GtXXlb7HRBnDLeUq6BDZmdIHiHWnSUYz0DvemGaOwd6xL-
+!define ruleAbap(e_out, e_in) SAPRule(constant, e_out, e_in, #154360, constant)
+
+sprite $formula [16x14/16z] JSsr0G0n5CDG1NhjF-s1W-xUHqm0KB01n9OkqcmukTt3FK-V15K_xglxLFFYzAAnjkiHK5nSZoSlXrpp4YUy
+!define ruleFormula(e_out, e_in) SAPRule(formula, e_out, e_in, #154360, formula)
+
+sprite $time [16x14/16z] Oy06-440YSS80Z0H80z8C300HQ1yE07b8aYiV9W5gF90WCHd098e1aAuQ7ou-o0KDlS3
+!define ruleTime(e_out, e_in) SAPRule(time, e_out, e_in, #154360, time)
+!define tim(e_label, e_techn) SAPField(e_label, e_techn, #154360, time)
+
+sprite $distribute [16x14/16z] NK-54KCn589ZWBV_jZsazYr18vS7m82XVwZeG2DZakQQHSZypa9e-f85cUBTb31SpYy_jQhbxq8Zz3oX2Uh_F2B36QwYvtrU
+!define ruleTimeDistribution(e_out, e_in) SAPRule(timeDistribution, e_out, e_in, #154360, distribute)
+
+!definelong ruleReadDSO(e_out, e_in, e_DSO)
+!$rule = "readDSO<" + e_DSO + ">"
+SAPRule($rule, e_out, e_in, #154360, dso)
+!enddefinelong
+
+!definelong ruleReadMD(e_out, e_in, e_MD)
+!$rule = "readMD<" + e_MD + ">"
+SAPRule($rule e_out, e_in, #154360, infoobject)
+!enddefinelong
+
+
+
 sprite $analysisProcess [16x14/16z] JOo53SL03CKSAVaWwlxRzfsBFdI85mMyjGVe_q6qlnC5KJUYsZ1BNyvIwoqU4ESjpzCWKGkkm0XEgwf6z5ZDhKtKKTAyyx83
 SAPEntityColoring(analysisProcess)
 !define analysisProcess(e_label, e_techn) SAPEntity(e_techn, e_label, e_techn, #154360, analysisProcess, analysisProcess)
