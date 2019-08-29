@@ -103,11 +103,12 @@ class "<color:e_color><$e_sprite></color>\n<b>e_label\n//<size:$TECHN_FONT_SIZE>
 !enddefinelong
 
 !definelong SAPField(e_label, e_techn, e_color, e_sprite)
-{field} <color:e_color><$e_sprite></color>\t e_label [e_techn]
+{field} <color:e_color><$e_sprite></color>     e_label [e_techn]
 !enddefinelong
+
 sprite $fkey [16x14/16z] JOk92G1138IoQM3wx_OG1Y_kAv8f2OpQvtVYEmxN7-YJx38YOLy_6dkFtJ5xrLwr0zxd0m
 !definelong SAPKeyField(e_label, e_techn, e_color, e_sprite)
-{field} <color:e_color><$e_sprite><$fkey></color>\t e_label [e_techn]
+{field} <color:e_color><$e_sprite><$fkey></color> e_label [e_techn]
 !enddefinelong
 
 !definelong SAPRule(e_label, e_out, e_in, e_color, e_sprite)
