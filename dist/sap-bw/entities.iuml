@@ -77,11 +77,23 @@ sprite $kyf [16x14/16z] TOh55S1058GcmddwhpQohgpoFle1jH3srWbNwox4YNKGTlO3mdPGcKZq
 
 sprite $cha [16x14/16z] TSj15i0G54DHa77slre805xRSlt3A8oQn_lnI2ItEIru6YtH0cppqs9sko73vuT6TOu3DlhkaPW
 !define cha(e_label, e_techn) SAPField(e_label, e_techn, #154360, cha)
-!define cha(e_label, e_techn, e_key) SAPField(e_label, e_techn, #154360, cha, e_key)
+!unquoted function cha(e_label, e_techn, e_key="")
+!if (e_key != "")
+SAPKeyField(e_label, e_techn, #154360, cha)
+!else
+SAPField(e_label, e_techn, #154360, cha)
+!endif
+!endfunction
 
 sprite $uni [16x14/16z] POg53S104CDSF77stxPAIWz-j7o4u-FnPZExrCsBNMqNj2wgQEOhV5tbZduFUkO5xkMF4MNYKT9XLxp1VW4
 !define uni(e_label, e_techn) SAPField(e_label, e_techn, #154360, uni)
-!define uni(e_label, e_techn, e_key) SAPField(e_label, e_techn, #154360, uni, e_key)
+!unquoted function uni(e_label, e_techn, e_key="")
+!if (e_key != "")
+SAPKeyField(e_label, e_techn, #154360, uni)
+!else
+SAPField(e_label, e_techn, #154360, uni)
+!endif
+!endfunction
 
 sprite $direct [16x14/16z] Ow0-u8S3T3x9wYa7
 !define rule1to1(e_out, e_in) SAPRule(1to1, e_out, e_in, #154360, direct)
@@ -94,7 +106,7 @@ sprite $abap [16x14/16z] dSor0G0W30H07BhiForEjEEwoBzBItCejGdITMPunxndyDUUx_NTv-Z
 !define ruleExpert() SAPRule(expertRoutine, void, "[]", #154360, abap)
 
 sprite $constant [16x14/16z] TSi73aGX409GH2FfS__RRgRjxrWVoU0ZD4z1KdodfG34Roq3H9GtXXlb7HRBnDLeUq6BDZmdIHiHWnSUYz0DvemGaOwd6xL-
-!define ruleAbap(e_out, e_in) SAPRule(constant, e_out, e_in, #154360, constant)
+!define ruleConstant(e_out, e_in) SAPRule(constant, e_out, e_in, #154360, constant)
 
 sprite $formula [16x14/16z] JSsr0G0n5CDG1NhjF-s1W-xUHqm0KB01n9OkqcmukTt3FK-V15K_xglxLFFYzAAnjkiHK5nSZoSlXrpp4YUy
 !define ruleFormula(e_out, e_in) SAPRule(formula, e_out, e_in, #154360, formula)
@@ -102,19 +114,25 @@ sprite $formula [16x14/16z] JSsr0G0n5CDG1NhjF-s1W-xUHqm0KB01n9OkqcmukTt3FK-V15K_
 sprite $time [16x14/16z] Oy06-440YSS80Z0H80z8C300HQ1yE07b8aYiV9W5gF90WCHd098e1aAuQ7ou-o0KDlS3
 !define ruleTime(e_out, e_in) SAPRule(time, e_out, e_in, #154360, time)
 !define tim(e_label, e_techn) SAPField(e_label, e_techn, #154360, time)
-!define tim(e_label, e_techn, e_key) SAPField(e_label, e_techn, #154360, time, e_key)
+!unquoted function tim(e_label, e_techn, e_key="")
+!if (e_key != "")
+SAPKeyField(e_label, e_techn, #154360, time)
+!else
+SAPField(e_label, e_techn, #154360, time)
+!endif
+!endfunction
 
 sprite $distribute [16x14/16z] NK-54KCn589ZWBV_jZsazYr18vS7m82XVwZeG2DZakQQHSZypa9e-f85cUBTb31SpYy_jQhbxq8Zz3oX2Uh_F2B36QwYvtrU
 !define ruleTimeDistribution(e_out, e_in) SAPRule(timeDistribution, e_out, e_in, #154360, distribute)
 
 !definelong ruleReadDSO(e_out, e_in, e_DSO)
-!$rule = "readDSO<" + e_DSO + ">"
+!local $rule = "readDSO<" + e_DSO + ">"
 SAPRule($rule, e_out, e_in, #154360, dso)
 !enddefinelong
 
 !definelong ruleReadMD(e_out, e_in, e_MD)
-!$rule = "readMD<" + e_MD + ">"
-SAPRule($rule e_out, e_in, #154360, infoobject)
+!local $rule = "readMD<" + e_MD + ">"
+SAPRule($rule, e_out, e_in, #154360, infoobject)
 !enddefinelong
 
 
