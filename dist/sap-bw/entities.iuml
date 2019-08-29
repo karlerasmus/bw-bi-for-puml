@@ -38,9 +38,9 @@ SAPEntityColoring(multi)
 
 sprite $transformation [16x14/16z] LSwt4G0n30F1jp7xxrQuePVb8iArbcbDtY99yCStJz3D1yiaSFfV3eR5PTisYebXYwfXPoIxltG
 SAPEntityColoring(transformation)
-!define transformation(e_label, e_techn) SAPEntity(e_techn, e_label, e_techn, #154360, transformation, transformation)
-!define transformation(e_label, e_techn, e_alias) SAPEntity(e_alias, e_label, e_techn, #154360, transformation, transformation)
-!define transformation(e_label, e_techn, e_alias, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, #154360, transformation, transformation)
+!define transformation(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, #154360, transformation, transformation)
+!define transformation(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, #154360, transformation, transformation)
+!define transformation(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, #154360, transformation, transformation)
 
 sprite $infopackage [16x14/16z] TO_L3K1H2CKEJVZk_jC-T-bL718zIM8EkesfWrbs_ZYjKnOL3nb9oIuhJ98U_b7ZQI-4quuLv9N_h_x19CR7E2C
 SAPEntityColoring(infopackage)
