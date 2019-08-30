@@ -12,6 +12,8 @@ allow_mixing
 ' Styling
 ' ##################################
 
+skinparam tabSize 2
+
 !$TECHN_FONT_SIZE = 12
 
 skinparam defaultFontName "Tahoma"
@@ -67,6 +69,12 @@ skinparam node {
   roundCorner 5
 }
 
+skinparam note {
+  backgroundColor #F4D03F
+  borderColor #FEF9E7
+  FontColor #424949
+}
+
 skinparam minClassWidth 100
 skinparam sameClassWidth true
 
@@ -113,6 +121,11 @@ sprite $fkey [16x14/16z] JOk92G1138IoQM3wx_OG1Y_kAv8f2OpQvtVYEmxN7-YJx38YOLy_6dk
 
 !definelong SAPRule(e_label, e_out, e_in, e_color, e_sprite)
 {method} <color:e_color><$e_sprite></color>\t e_out:e_label(e_in)
+!enddefinelong
+!definelong SAPRule(e_label, e_out, e_in, e_color, e_sprite, e_sudo)
+....
+{method} <color:e_color><$e_sprite></color>\t e_out:e_label(e_in) \n\t{\ne_sudo\n\t}
+....
 !enddefinelong
 
 

@@ -102,14 +102,18 @@ sprite $abap [16x14/16z] dSor0G0W30H07BhiForEjEEwoBzBItCejGdITMPunxndyDUUx_NTv-Z
 !define ruleAbap(e_out, e_in) SAPRule(abapRoutine, e_out, e_in, #154360, abap)
 
 !define ruleStart() SAPRule(startRoutine, void, "[]", #154360, abap)
+!define ruleStart(e_sudo) SAPRule(startRoutine, void, "[]", #154360, abap,e_sudo)
 !define ruleEnd() SAPRule(endRoutine, void, "[]", #154360, abap)
+!define ruleEnd(e_sudo) SAPRule(endRoutine, void, "[]", #154360, abap, e_sudo)
 !define ruleExpert() SAPRule(expertRoutine, void, "[]", #154360, abap)
+!define ruleExpert(e_sudo) SAPRule(expertRoutine, void, "[]", #154360, abap, e_sudo)
 
 sprite $constant [16x14/16z] TSi73aGX409GH2FfS__RRgRjxrWVoU0ZD4z1KdodfG34Roq3H9GtXXlb7HRBnDLeUq6BDZmdIHiHWnSUYz0DvemGaOwd6xL-
 !define ruleConstant(e_out, e_in) SAPRule(constant, e_out, e_in, #154360, constant)
 
 sprite $formula [16x14/16z] JSsr0G0n5CDG1NhjF-s1W-xUHqm0KB01n9OkqcmukTt3FK-V15K_xglxLFFYzAAnjkiHK5nSZoSlXrpp4YUy
 !define ruleFormula(e_out, e_in) SAPRule(formula, e_out, e_in, #154360, formula)
+!define ruleFormula(e_out, e_in, e_sudo) SAPRule(formula, e_out, e_in, #154360, formula, e_sudo)
 
 sprite $time [16x14/16z] Oy06-440YSS80Z0H80z8C300HQ1yE07b8aYiV9W5gF90WCHd098e1aAuQ7ou-o0KDlS3
 !define ruleTime(e_out, e_in) SAPRule(time, e_out, e_in, #154360, time)
