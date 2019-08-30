@@ -92,22 +92,22 @@ skinparam class<<stereo>> {
 !enddefinelong
 
 !definelong SAPEntity(e_alias, e_label, e_techn, e_color, e_sprite, e_stereo)
-rectangle "<color:e_color><$e_sprite{scale=2}></color>\n<b>e_label\n//<size:$TECHN_FONT_SIZE>[e_techn]</size>//" <<e_stereo>> as e_alias
+rectangle "<color:e_color><$e_sprite{scale=1.5}></color>\n<b>e_label\n//<size:$TECHN_FONT_SIZE>[e_techn]</size>//" <<e_stereo>> as e_alias
 !enddefinelong
 
 !definelong SAPEntity(e_alias, e_label, e_techn, e_descr, e_color, e_sprite, e_stereo)
-rectangle "<color:e_color><$e_sprite{scale=2}></color>\n<b>e_label\n//<size:$TECHN_FONT_SIZE>[e_techn]</size>//\n\n e_descr" <<e_stereo>> as e_alias
+rectangle "<color:e_color><$e_sprite{scale=1.5}></color>\n<b>e_label\n//<size:$TECHN_FONT_SIZE>[e_techn]</size>//\n\n e_descr" <<e_stereo>> as e_alias
 !enddefinelong
 
 hide circle
 hide empty members
 
 !definelong SAPClass(e_alias, e_label, e_techn, e_color, e_sprite, e_stereo)
-class "<color:e_color><$e_sprite{scale=2}></color>\n<b>e_label\n//<size:$TECHN_FONT_SIZE>[e_techn]</size>//" as e_alias <<e_stereo>>
+class "<color:e_color><$e_sprite{scale=1.5}></color>\n<b>e_label\n//<size:$TECHN_FONT_SIZE>[e_techn]</size>//" as e_alias <<e_stereo>>
 !enddefinelong
 
 !definelong SAPClass(e_alias, e_label, e_techn, e_descr, e_color, e_sprite, e_stereo)
-class "<color:e_color><$e_sprite{scale=2}></color>\n<b>e_label\n//<size:$TECHN_FONT_SIZE>[e_techn]</size>//\n\n e_descr" as e_alias <<e_stereo>>
+class "<color:e_color><$e_sprite{scale=1.5}></color>\n<b>e_label\n//<size:$TECHN_FONT_SIZE>[e_techn]</size>//\n\n e_descr" as e_alias <<e_stereo>>
 !enddefinelong
 
 !definelong SAPField(e_label, e_techn, e_color, e_sprite)
