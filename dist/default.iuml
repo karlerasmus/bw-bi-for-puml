@@ -1,0 +1,5 @@
+'SPDX-License-Identifier: GPL-3.0-or-later
+
+!include common.iuml
+!include sap-bw/entities.iuml
+!include sap-hana/entities.iuml
