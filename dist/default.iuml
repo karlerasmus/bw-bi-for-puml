@@ -1,5 +1,6 @@
 'SPDX-License-Identifier: GPL-3.0-or-later
 
-!include common.iuml
-!include sap-bw/entities.iuml
-!include sap-hana/entities.iuml
+!$dist = "https://raw.githubusercontent.com/karlerasmus/bw-bi-for-puml/master/dist"
+!include $dist/common.iuml
+!include $dist/sap-bw/entities.iuml
+!include $dist/sap-hana/entities.iuml
