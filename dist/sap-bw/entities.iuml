@@ -8,6 +8,10 @@ component "<b>Staging Layer" as stagingLayer #FADBD8
 component "<b>Data Mart Layer" as dataMartLayer #EAF2F8
 !enddefinelong
 
+!definelong virtualDataMartLayer()
+component "<b>Virtual Data\nMart Layer" as virtualDataMartLayer #EAF2F8
+!enddefinelong
+
 !definelong dataWarehouseLayer()
 component "<b>Data Warehouse Layer" as dataWarehouseLayer #D1F2EB
 !enddefinelong
