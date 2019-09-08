@@ -95,9 +95,9 @@ JOw50G0X30CheJZxZ_la_T1wv2KH-GZTXnyBOeyDDwMtx4_PduRRhgNGZW0WG3HjGXj-nhkQZSyUJiON
 n_uu
 }
 SAPEntityColoring(procedure)
-!define procedure(e_label, e_techn) SAPEntity(e_techn, e_label, e_techn, #154360, procedure, procedure)
-!define procedure(e_label, e_techn, e_alias) SAPEntity(e_alias, e_label, e_techn, #154360, procedure, procedure)
-!define procedure(e_label, e_techn, e_alias, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, #154360, procedure, procedure)
+!define dbProcedure(e_label, e_techn) SAPEntity(e_techn, e_label, e_techn, #154360, procedure, procedure)
+!define dbProcedure(e_label, e_techn, e_alias) SAPEntity(e_alias, e_label, e_techn, #154360, procedure, procedure)
+!define dbProcedure(e_label, e_techn, e_alias, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, #154360, procedure, procedure)
 
 sprite $projection [15x15/16z] VOa50i0m2CGArEN_tztkvffgYBjZAwkkxw4vv-1-QoLKKDCCLL03Pe4AWXjZKKMDc4KgY3g6ngDoTbH03SJS2nC
 SAPEntityColoring(projection)
