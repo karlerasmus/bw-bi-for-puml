@@ -149,3 +149,13 @@ SAPEntityColoring(sapSystem)
 !define sapSystem(e_label, e_techn) SAPEntity(e_techn, e_label, e_techn, #154360, sapSystem, sapSystem)
 !define sapSystem(e_label, e_techn, e_alias) SAPEntity(e_alias, e_label, e_techn, #154360, sapSystem, sapSystem)
 !define sapSystem(e_label, e_techn, e_alias, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, #154360, sapSystem, sapSystem)
+
+!definelong relationship(e_from, e_to)
+e_from - e_to
+!enddefinelong
+!definelong relationship(e_from, e_to, e_arrow)
+e_from e_arrow e_to
+!enddefinelong
+!definelong relationship(e_from, e_to, e_arrow, e_message)
+e_from e_arrow e_to : e_message
+!enddefinelong
