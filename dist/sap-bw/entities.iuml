@@ -1,5 +1,26 @@
 'SPDX-License-Identifier: GPL-3.0-or-later
 
+!definelong stagingLayer()
+component "<b>Staging Layer" as stagingLayer #FADBD8
+!enddefinelong
+
+!definelong dataMartLayer()
+component "<b>Data Mart Layer" as dataMartLayer #EAF2F8
+!enddefinelong
+
+!definelong dataWarehouseLayer()
+component "<b>Data Warehouse Layer" as dataWarehouseLayer #D1F2EB
+!enddefinelong
+
+!definelong corporateMemory()
+component "<b>Corporate Memory" as corporateMemory #FCF3CF
+!enddefinelong
+
+!definelong queryLayer()
+component "<b>BEx Queries" as queryLayer #F6DDCC
+!enddefinelong
+
+
 sprite $dataSource [16x14/16z] HOm53W0n3CDwwK2S___svc66Zgp6YUsC5tES3sNHp7ImoXHRjgeLRVEd45ZXKWOh0aIbi2HmCuFK-EDJfE_ecUpSS6RaY3VZ8SDNUV03
 SAPEntityColoring(dataSource)
 !define dataSource(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, #154360, dataSource, dataSource)
@@ -92,6 +113,16 @@ sprite $cha [16x14/16z] TSj15i0G54DHa77slre805xRSlt3A8oQn_lnI2ItEIru6YtH0cppqs9s
 SAPKeyField(e_label, e_techn, #154360, cha)
 !else
 SAPField(e_label, e_techn, #154360, cha)
+!endif
+!endfunction
+
+sprite $field [16x14/16z] Oo04-D404ohWPs840dP6603psTdP4NmGbnae0EE3k40-Ev8y2E3GZs4-8txteJiV
+!define field(e_label, e_techn) SAPField(e_label, e_techn, #154360, field)
+!unquoted function field(e_label, e_techn, e_key="")
+!if (e_key != "")
+SAPKeyField(e_label, e_techn, #154360, field)
+!else
+SAPField(e_label, e_techn, #154360, field)
 !endif
 !endfunction
 
