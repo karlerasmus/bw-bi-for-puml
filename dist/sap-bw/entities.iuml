@@ -159,14 +159,24 @@ sprite $direct [16x14/16z] Ow0-u8S3T3x9wYa7
 !define rule1to1(e_out, e_in) SAPRule(1to1, e_out, e_in, #154360, direct)
 
 sprite $abap [16x14/16z] dSor0G0W30H07BhiForEjEEwoBzBItCejGdITMPunxndyDUUx_NTv-ZJCsStE_ppvhRD-UTk-v6T1m
-!define ruleAbap(e_out, e_in) SAPRule(abapRoutine, e_out, e_in, #154360, abap)
 
+!define ruleAbap(e_out, e_in) SAPRule(abapRoutine, e_out, e_in, #154360, abap)
 !define ruleStart() SAPRule(startRoutine, void, "[]", #154360, abap)
 !define ruleStart(e_sudo) SAPRule(startRoutine, void, "[]", #154360, abap,e_sudo)
 !define ruleEnd() SAPRule(endRoutine, void, "[]", #154360, abap)
 !define ruleEnd(e_sudo) SAPRule(endRoutine, void, "[]", #154360, abap, e_sudo)
 !define ruleExpert() SAPRule(expertRoutine, void, "[]", #154360, abap)
 !define ruleExpert(e_sudo) SAPRule(expertRoutine, void, "[]", #154360, abap, e_sudo)
+
+SAPEntityColoring(functionGroup)
+!define functionGroup(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, #154360, abap, functionGroup)
+!define functionGroup(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, #154360, abap, functionGroup)
+!define functionGroup(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, #154360, abap, functionGroup)
+
+sprite $clazz [16x14/16z] RSu54e0m34HHvWUv_uc1HcixbhVLOvUd9OMD3mEpS89EqO9OiHfbMS0ObaQp5HgblGyi7rAk__y
+!define class(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, #154360, clazz, class)
+!define class(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, #154360, clazz, class)
+!define class(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, #154360, clazz, class)
 
 sprite $constant [16x14/16z] TSi73aGX409GH2FfS__RRgRjxrWVoU0ZD4z1KdodfG34Roq3H9GtXXlb7HRBnDLeUq6BDZmdIHiHWnSUYz0DvemGaOwd6xL-
 !define ruleConstant(e_out, e_in) SAPRule(constant, e_out, e_in, #154360, constant)
