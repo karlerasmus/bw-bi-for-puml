@@ -5,7 +5,7 @@ component "<b>Staging Layer" as stagingLayer #FADBD8
 !enddefinelong
 
 !definelong dataMartLayer()
-component "<b>Data Mart Layer" as dataMartLayer #EAF2F8
+component "<b>Data Mart Layer" as dataMartLayer #F6DDCC
 !enddefinelong
 
 !definelong virtualDataMartLayer()
