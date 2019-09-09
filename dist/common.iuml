@@ -167,3 +167,7 @@ e_from - e_to
 !definelong rel_association(e_from, e_to, e_arrow)
 e_from e_arrow e_to
 !enddefinelong
+
+!function rel_hidden($e_from, $e_to, $e_dir="up")
+$e_from -[hidden]$e_dir- $e_to
+!endfunction
