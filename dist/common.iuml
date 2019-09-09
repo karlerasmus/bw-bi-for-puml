@@ -151,7 +151,7 @@ SAPEntityColoring(sapSystem)
 !define sapSystem(e_label, e_techn, e_alias, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, #154360, sapSystem, sapSystem)
 
 !definelong rel_flow(e_from, e_to)
-e_from -> e_to
+e_from --> e_to
 !enddefinelong
 !definelong rel_flow(e_from, e_to, e_arrow)
 e_from e_arrow e_to
