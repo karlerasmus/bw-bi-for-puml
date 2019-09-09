@@ -168,6 +168,6 @@ e_from - e_to
 e_from e_arrow e_to
 !enddefinelong
 
-!function rel_hidden($e_from, $e_to, $e_dir="up")
+!unquoted function rel_hidden($e_from, $e_to, $e_dir="up")
 $e_from -[hidden]$e_dir- $e_to
 !endfunction
