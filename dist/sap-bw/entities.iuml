@@ -49,6 +49,10 @@ SAPEntityColoring(dso)
 !define dso(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, #154360, dso, dso)
 !define dso(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, #154360, dso, dso)
 
+!define advancedDso(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, #154360, dso, advancedDso)
+!define advancedDso(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, #154360, dso, advancedDso)
+!define advancedDso(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, #154360, dso, advancedDso)
+
 SAPEntityColoring(dsoWriteOptimised)
 !define dsoWriteOptimised(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, #154360, dso, dsoWriteOptimised)
 !define dsoWriteOptimised(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, #154360, dso, dsoWriteOptimised)
@@ -82,9 +86,9 @@ SAPEntityColoring(cube)
 
 sprite $multi [16x14/16z] NObL0e0m3CNQ2VAL-z-MuB2tMh8mG3jM7A5dL-2Kzds8Yzd99bq4xVZEzM75WRtva1Nhoe6DGB7ALq8XkqtE3iM1cN1gg61wFNckZbhxpGmSK8gCk04
 SAPEntityColoring(multi)
-!define multi(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, #154360, multi, multi)
-!define multi(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, #154360, multi, multi)
-!define multi(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, #154360, multi, multi)
+!define multiProvider(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, #154360, multi, multiProvider)
+!define multiProvider(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, #154360, multi, multiProvider)
+!define multiProvider(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, #154360, multi, multiProvider)
 
 sprite $transformation [16x14/16z] LSwt4G0n30F1jp7xxrQuePVb8iArbcbDtY99yCStJz3D1yiaSFfV3eR5PTisYebXYwfXPoIxltG
 SAPEntityColoring(transformation)

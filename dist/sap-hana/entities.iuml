@@ -29,9 +29,9 @@ SAPEntityColoring(decisionTable)
 
 sprite $dimension [16x16/16z] TSg54GH034BHGDRxB_W2vyRePrxy7FfRvZc1Ht7j2V16qCP0O1JnMeU9Jf5i8hFERf9PX2PkvftKeUQLL2yrH90-TdWaKaUdIWJCTYy_vBtkvCyk
 SAPEntityColoring(dimension)
-!define dimension(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, #154360, dimension, dimension)
-!define dimension(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, #154360, dimension, dimension)
-!define dimension(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, #154360, dimension, dimension)
+!define attributeView(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, #154360, dimension, attributeView)
+!define attributeView(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, #154360, dimension, attributeView)
+!define attributeView(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, #154360, dimension, attributeView)
 
 sprite $function [15x15/16z] HOu50WCm20CXeJRz_syNLhig7jlKn6mizFKqtJrFSqTB4yZJm4XpqLhhCaDjg4HszBZc0D1baaRofQFxHD-otZUPxtZ7IKQjtrflzAzgcG2MgbWiLHk9ageV
 
