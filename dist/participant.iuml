@@ -1,3 +1,9 @@
+skinparam participant {
+  BorderColor $SAP_BORDER_COLOR
+  BackgroundColor $SAP_BG_COLOR
+  roundCorner 5
+}
+
 !definelong SAPEntity(e_alias, e_label, e_techn, e_color, e_sprite, e_stereo)
 participant "<color:e_color><$e_sprite{scale=1.5}></color>\n<b>e_label\n//<size:$TECHN_FONT_SIZE>[e_techn]</size>//" as e_alias
 !enddefinelong
