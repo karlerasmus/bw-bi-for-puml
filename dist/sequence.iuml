@@ -2,7 +2,6 @@
 
 !$dist = "https://raw.githubusercontent.com/karlerasmus/bw-bi-for-puml/master/dist"
 !include $dist/common.iuml
+!include $dist/participant.iuml
 !include $dist/sap-bw/entities.iuml
 !include $dist/sap-hana/entities.iuml
-
-allow_mixing
