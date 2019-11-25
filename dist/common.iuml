@@ -198,3 +198,21 @@ e_from -- e_to
 !definelong rel_unknown(e_from, e_to, e_message)
 e_from -- e_to : e_message
 !enddefinelong
+!definelong rel_n_to_1(e_from, e_to)
+e_from }--|| e_to
+!enddefinelong
+!definelong rel_n_to_1(e_from, e_to, e_message)
+e_from }--|| e_to : e_message
+!enddefinelong
+!definelong rel_n_to_0(e_from, e_to)
+e_from }--o| e_to
+!enddefinelong
+!definelong rel_n_to_0(e_from, e_to, e_message)
+e_from }--o| e_to : e_message
+!enddefinelong
+!definelong rel_1_to_1(e_from, e_to)
+e_from ||--|| e_to
+!enddefinelong
+!definelong rel_1_to_1(e_from, e_to, e_message)
+e_from ||--|| e_to : e_message
+!enddefinelong
