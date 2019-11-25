@@ -171,3 +171,24 @@ e_from e_arrow e_to
 !unquoted function rel_hidden($e_from, $e_to, $e_dir="up")
 $e_from -[hidden]$e_dir- $e_to
 !endfunction
+
+
+'ERD Relationships
+!definelong rel_1_to_n(e_from, e_to)
+e_from ||--{ e_to
+!enddefinelong
+!definelong rel_1_to_n(e_from, e_to, e_message)
+e_from ||--{ e_to : e_message
+!enddefinelong
+!definelong rel_0_to_n(e_from, e_to)
+e_from |o--{ e_to
+!enddefinelong
+!definelong rel_0_to_n(e_from, e_to, e_message)
+e_from |o--{ e_to : e_message
+!enddefinelong
+!definelong rel_n_to_n(e_from, e_to)
+e_from }--{ e_to
+!enddefinelong
+!definelong rel_n_to_n(e_from, e_to, e_message)
+e_from }--{ e_to : e_message
+!enddefinelong
