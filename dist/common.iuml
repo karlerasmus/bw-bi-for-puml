@@ -192,3 +192,9 @@ e_from }--{ e_to
 !definelong rel_n_to_n(e_from, e_to, e_message)
 e_from }--{ e_to : e_message
 !enddefinelong
+!definelong rel_unknown(e_from, e_to)
+e_from - e_to
+!enddefinelong
+!definelong rel_unknown(e_from, e_to, e_message)
+e_from - e_to : e_message
+!enddefinelong
