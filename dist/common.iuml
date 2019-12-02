@@ -177,42 +177,200 @@ $e_from -[hidden]$e_dir- $e_to
 !definelong rel_1_to_n(e_from, e_to)
 e_from ||--{ e_to
 !enddefinelong
+!definelong rel_1_to_n_u(e_from, e_to)
+e_from ||-up-{ e_to
+!enddefinelong
+!definelong rel_1_to_n_l(e_from, e_to)
+e_from ||-left-{ e_to
+!enddefinelong
+!definelong rel_1_to_n_r(e_from, e_to)
+e_from ||-right-{ e_to
+!enddefinelong
+!definelong rel_1_to_n_d(e_from, e_to)
+e_from ||-down-{ e_to
+!enddefinelong
+
 !definelong rel_1_to_n(e_from, e_to, e_message)
 e_from ||--{ e_to : e_message
 !enddefinelong
+!definelong rel_1_to_n_u(e_from, e_to, e_message)
+e_from ||-up-{ e_to : e_message
+!enddefinelong
+!definelong rel_1_to_n_l(e_from, e_to, e_message)
+e_from ||-left-{ e_to : e_message
+!enddefinelong
+!definelong rel_1_to_n_r(e_from, e_to, e_message)
+e_from ||-right-{ e_to : e_message
+!enddefinelong
+!definelong rel_1_to_n_d(e_from, e_to, e_message)
+e_from ||-down-{ e_to : e_message
+!enddefinelong
+
 !definelong rel_0_to_n(e_from, e_to)
 e_from |o--{ e_to
 !enddefinelong
+!definelong rel_0_to_n_l(e_from, e_to)
+e_from |o-left-{ e_to
+!enddefinelong
+!definelong rel_0_to_n_r(e_from, e_to)
+e_from |o-right-{ e_to
+!enddefinelong
+!definelong rel_0_to_n_d(e_from, e_to)
+e_from |o-down-{ e_to
+!enddefinelong
+!definelong rel_0_to_n_u(e_from, e_to)
+e_from |o-up-{ e_to
+!enddefinelong
+
 !definelong rel_0_to_n(e_from, e_to, e_message)
 e_from |o--{ e_to : e_message
 !enddefinelong
+!definelong rel_0_to_n_l(e_from, e_to, e_message)
+e_from |o-left-{ e_to : e_message
+!enddefinelong
+!definelong rel_0_to_n_r(e_from, e_to, e_message)
+e_from |o-right-{ e_to : e_message
+!enddefinelong
+!definelong rel_0_to_n_d(e_from, e_to, e_message)
+e_from |o-down-{ e_to : e_message
+!enddefinelong
+!definelong rel_0_to_n_u(e_from, e_to, e_message)
+e_from |o-up-{ e_to : e_message
+!enddefinelong
+
 !definelong rel_n_to_n(e_from, e_to)
 e_from }--{ e_to
 !enddefinelong
+!definelong rel_n_to_n_l(e_from, e_to)
+e_from }-left-{ e_to
+!enddefinelong
+!definelong rel_n_to_n_r(e_from, e_to)
+e_from }-right-{ e_to
+!enddefinelong
+!definelong rel_n_to_n_u(e_from, e_to)
+e_from }-up-{ e_to
+!enddefinelong
+!definelong rel_n_to_n_d(e_from, e_to)
+e_from }-down-{ e_to
+!enddefinelong
+
 !definelong rel_n_to_n(e_from, e_to, e_message)
 e_from }--{ e_to : e_message
 !enddefinelong
+!definelong rel_n_to_n_l(e_from, e_to, e_message)
+e_from }-left-{ e_to : e_message
+!enddefinelong
+!definelong rel_n_to_n_r(e_from, e_to, e_message)
+e_from }-right-{ e_to : e_message
+!enddefinelong
+!definelong rel_n_to_n_d(e_from, e_to, e_message)
+e_from }-down-{ e_to : e_message
+!enddefinelong
+!definelong rel_n_to_n_u(e_from, e_to, e_message)
+e_from }-up-{ e_to : e_message
+!enddefinelong
+
 !definelong rel_unknown(e_from, e_to)
 e_from -- e_to
 !enddefinelong
+
 !definelong rel_unknown(e_from, e_to, e_message)
 e_from -- e_to : e_message
 !enddefinelong
+
 !definelong rel_n_to_1(e_from, e_to)
 e_from }--|| e_to
 !enddefinelong
+!definelong rel_n_to_1_u(e_from, e_to)
+e_from }-up-|| e_to
+!enddefinelong
+!definelong rel_n_to_1_d(e_from, e_to)
+e_from }-down-|| e_to
+!enddefinelong
+!definelong rel_n_to_1_l(e_from, e_to)
+e_from }-left-|| e_to
+!enddefinelong
+!definelong rel_n_to_1_r(e_from, e_to)
+e_from }-right-|| e_to
+!enddefinelong
+
+
 !definelong rel_n_to_1(e_from, e_to, e_message)
 e_from }--|| e_to : e_message
 !enddefinelong
+!definelong rel_n_to_1_u(e_from, e_to, e_message)
+e_from }-up-|| e_to : e_message
+!enddefinelong
+!definelong rel_n_to_1_l(e_from, e_to, e_message)
+e_from }-left-|| e_to : e_message
+!enddefinelong
+!definelong rel_n_to_1_r(e_from, e_to, e_message)
+e_from }-right-|| e_to : e_message
+!enddefinelong
+!definelong rel_n_to_1_d(e_from, e_to, e_message)
+e_from }-down-|| e_to : e_message
+!enddefinelong
+
 !definelong rel_n_to_0(e_from, e_to)
 e_from }--o| e_to
 !enddefinelong
+!definelong rel_n_to_0_l(e_from, e_to)
+e_from }-left-o| e_to
+!enddefinelong
+!definelong rel_n_to_0_r(e_from, e_to)
+e_from }-right-o| e_to
+!enddefinelong
+!definelong rel_n_to_0_u(e_from, e_to)
+e_from }-up-o| e_to
+!enddefinelong
+!definelong rel_n_to_0_d(e_from, e_to)
+e_from }-down-o| e_to
+!enddefinelong
+
 !definelong rel_n_to_0(e_from, e_to, e_message)
 e_from }--o| e_to : e_message
 !enddefinelong
+!definelong rel_n_to_0_l(e_from, e_to, e_message)
+e_from }-left-o| e_to : e_message
+!enddefinelong
+!definelong rel_n_to_0_r(e_from, e_to, e_message)
+e_from }-right-o| e_to : e_message
+!enddefinelong
+!definelong rel_n_to_0_u(e_from, e_to, e_message)
+e_from }-up-o| e_to : e_message
+!enddefinelong
+!definelong rel_n_to_0_d(e_from, e_to, e_message)
+e_from }-down-o| e_to : e_message
+!enddefinelong
+
 !definelong rel_1_to_1(e_from, e_to)
 e_from ||--|| e_to
 !enddefinelong
+!definelong rel_1_to_1_d(e_from, e_to)
+e_from ||-down-|| e_to
+!enddefinelong
+!definelong rel_1_to_1_u(e_from, e_to)
+e_from ||-up-|| e_to
+!enddefinelong
+!definelong rel_1_to_1_l(e_from, e_to)
+e_from ||-left-|| e_to
+!enddefinelong
+!definelong rel_1_to_1_r(e_from, e_to)
+e_from ||-right-|| e_to
+!enddefinelong
+
 !definelong rel_1_to_1(e_from, e_to, e_message)
 e_from ||--|| e_to : e_message
+!enddefinelong
+!definelong rel_1_to_1_u(e_from, e_to, e_message)
+e_from ||-up-|| e_to : e_message
+!enddefinelong
+!definelong rel_1_to_1_l(e_from, e_to, e_message)
+e_from ||-left-|| e_to : e_message
+!enddefinelong
+!definelong rel_1_to_1_r(e_from, e_to, e_message)
+e_from ||-right-|| e_to : e_message
+!enddefinelong
+!definelong rel_1_to_1_d(e_from, e_to, e_message)
+e_from ||-down-|| e_to : e_message
 !enddefinelong
