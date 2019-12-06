@@ -25,7 +25,7 @@
 '	skinparam defaultFontName "Mogra"
 '	skinparam defaultFontName "Amatic SC"
 	
-    center footer "For discussion, needs to be validated"
+    center footer For discussion, needs to be validated
 !enddefinelong
 
 !define LAYOUT_TOP_DOWN top to bottom direction
