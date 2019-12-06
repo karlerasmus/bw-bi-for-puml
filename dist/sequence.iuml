@@ -1,7 +1,12 @@
 'SPDX-License-Identifier: GPL-3.0-or-later
 
 !$dist = "https://raw.githubusercontent.com/karlerasmus/bw-bi-for-puml/master/dist"
-!include $dist/common.iuml
-!include $dist/participant.iuml
+!include $dist/common/color.iuml
+!include $dist/common/style.iuml
+!include $dist/sap-bw/style.iuml
+!include $dist/sap-hana/style.iuml
+!include $dist/sap-bw/sprites.iuml
+!include $dist/sap-hana/sprites.iuml
+!include $dist/common/participants.iuml
 !include $dist/sap-bw/entities.iuml
 !include $dist/sap-hana/entities.iuml

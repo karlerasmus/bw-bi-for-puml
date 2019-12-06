@@ -1,0 +1,29 @@
+
+!definelong setBWpalette(p_bgcolor, p_bdrcolor)
+
+SAPEntityColoring(dataSource, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(sourceSystem, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(psa, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(dso, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(dsoWriteOptimised, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(adsoWriteOptimised, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(dsoStandard, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(adsoStandard, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(cube, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(adsoCube, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(multi, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(transformation, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(infopackage, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(dtp, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(infoset, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(compositeProvider, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(infoobject, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(functionGroup, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(analysisProcess, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(infoSource, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(openHub, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(sapSystem, p_bgcolor, p_bdrcolor)
+
+!enddefinelong
+
+setBWpalette($SAP_BG_COLOR, $SAP_BORDER_COLOR)

@@ -1,0 +1,30 @@
+
+!definelong setHANApalette(p_bgcolor, p_bdrcolor)
+
+SAPEntityColoring(aggregation, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(calcView, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(analyticView, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(decisionTable, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(dimension, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(tableFunction, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(scalarFunction, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(innerJoin, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(leftJoin, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(scriptView, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(outerJoin, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(package, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(procedure, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(projection, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(rank, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(rightJoin, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(schema, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(starJoin, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(table, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(virtualTable, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(join, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(view, p_bgcolor, p_bdrcolor)
+SAPEntityColoring(union, p_bgcolor, p_bdrcolor)
+
+!enddefinelong
+
+setHANApalette($SAP_BG_COLOR, $SAP_BORDER_COLOR)

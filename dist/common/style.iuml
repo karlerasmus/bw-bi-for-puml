@@ -1,0 +1,89 @@
+
+' Styling
+' ----------------------------------
+
+skinparam tabSize 2
+
+!$TECHN_FONT_SIZE = 12
+
+skinparam defaultFontName "Tahoma"
+
+skinparam defaultTextAlignment left
+skinparam shadowing false
+skinparam wrapWidth 400
+skinparam maxMessageSize 150
+skinparam minClassWidth 100
+skinparam sameClassWidth true
+
+skinparam rectangle {
+    StereotypeFontSize 10
+}
+
+skinparam Arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam note {
+  backgroundColor #F4D03F
+  borderColor #FEF9E7
+  FontColor #424949
+}
+
+!definelong setPalette(p_bgcolor, p_bdrcolor)
+
+skinparam component {
+  BorderColor p_bdrcolor
+  BackgroundColor p_bgcolor
+}
+
+skinparam folder {
+  BorderColor p_bdrcolor
+  BackgroundColor p_bgcolor
+  roundCorner 5
+}
+
+skinparam class {
+  BorderColor p_bdrcolor
+  BackgroundColor p_bgcolor
+}
+
+skinparam database {
+  BorderColor p_bdrcolor
+  BackgroundColor p_bgcolor
+}
+
+skinparam package {
+  BorderColor p_bdrcolor
+  BackgroundColor p_bgcolor
+}
+
+skinparam node {
+  BorderColor p_bdrcolor
+  BackgroundColor p_bgcolor
+  roundCorner 5
+}
+
+skinparam participant {
+  BorderColor p_bdrcolor
+  BackgroundColor p_bgcolor
+}
+
+skinparam SequenceLifeLineBorderColor p_bdrcolor
+
+!enddefinelong
+
+setPalette($SAP_BG_COLOR,$SAP_BORDER_COLOR)
+
+!definelong SAPEntityColoring(p_stereo, p_bgcolor, p_bdrcolor)
+skinparam rectangle<<p_stereo>> {
+    BackgroundColor p_bgcolor
+    BorderColor p_bdrcolor
+    roundCorner 5
+}
+skinparam class<<p_stereo>> {
+    BackgroundColor p_bgcolor
+    BorderColor p_bdrcolor
+}
+!enddefinelong

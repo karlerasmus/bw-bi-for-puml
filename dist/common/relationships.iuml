@@ -1,155 +1,6 @@
-'SPDX-License-Identifier: GPL-3.0-or-later
-
-'Layout
-'allow_mixing
-'left to right direction
-
-' Colors
-' ##################################
-!$SAP_COLOR = "#154360"
-!$SAP_BG_COLOR =  "#FDFEFE"
-!$SAP_BORDER_COLOR = "#7B7D7D"
-!$SAP_SYMBOL_COLOR = $SAP_COLOR
-
-' Styling
-' ##################################
-
-skinparam tabSize 2
-
-!$TECHN_FONT_SIZE = 12
-
-skinparam defaultFontName "Tahoma"
-
-skinparam defaultTextAlignment left
-skinparam shadowing false
-skinparam wrapWidth 400
-skinparam maxMessageSize 150
-
-skinparam rectangle {
-    StereotypeFontSize 10
-}
-
-skinparam Arrow {
-    Color #666666
-    FontColor #666666
-    FontSize 12
-}
-
-skinparam component {
-  BorderColor $SAP_BORDER_COLOR
-  BackgroundColor $SAP_BG_COLOR
-  roundCorner 5
-}
-
-skinparam folder {
-  BorderColor $SAP_BORDER_COLOR
-  BackgroundColor $SAP_BG_COLOR
-  roundCorner 5
-}
-
-skinparam class {
-  BorderColor $SAP_BORDER_COLOR
-  BackgroundColor $SAP_BG_COLOR
-  roundCorner 5
-}
-
-skinparam database {
-  BorderColor $SAP_BORDER_COLOR
-  BackgroundColor $SAP_BG_COLOR
-  roundCorner 5
-}
-
-skinparam package {
-  BorderColor $SAP_BORDER_COLOR
-  BackgroundColor $SAP_BG_COLOR
-  roundCorner 5
-}
-
-skinparam node {
-  BorderColor $SAP_BORDER_COLOR
-  BackgroundColor $SAP_BG_COLOR
-  roundCorner 5
-}
-
-skinparam note {
-  backgroundColor #F4D03F
-  borderColor #FEF9E7
-  FontColor #424949
-}
-
-skinparam minClassWidth 100
-skinparam sameClassWidth true
-
-!definelong SAPEntityColoring(stereo)
-skinparam rectangle<<stereo>> {
-    BackgroundColor $SAP_BG_COLOR
-    BorderColor $SAP_BORDER_COLOR
-    roundCorner 5
-}
-skinparam class<<stereo>> {
-    BackgroundColor $SAP_BG_COLOR
-    BorderColor $SAP_BORDER_COLOR
-    roundCorner 5
-}
-!enddefinelong
-
-!definelong SAPEntity(e_alias, e_label, e_techn, e_color, e_sprite, e_stereo)
-rectangle "<color:e_color><$e_sprite{scale=1.5}></color>\n<b>e_label\n//<size:$TECHN_FONT_SIZE>[e_techn]</size>//" <<e_stereo>> as e_alias
-!enddefinelong
-
-!definelong SAPEntity(e_alias, e_label, e_techn, e_descr, e_color, e_sprite, e_stereo)
-rectangle "<color:e_color><$e_sprite{scale=1.5}></color>\n<b>e_label\n//<size:$TECHN_FONT_SIZE>[e_techn]</size>//\n\n e_descr" <<e_stereo>> as e_alias
-!enddefinelong
-
-hide circle
-hide empty members
-
-!definelong SAPClass(e_alias, e_label, e_techn, e_color, e_sprite, e_stereo)
-class "<color:e_color><$e_sprite{scale=1.5}></color>\n<b>e_label\n//<size:$TECHN_FONT_SIZE>[e_techn]</size>//" as e_alias <<e_stereo>>
-!enddefinelong
-
-!definelong SAPClass(e_alias, e_label, e_techn, e_descr, e_color, e_sprite, e_stereo)
-class "<color:e_color><$e_sprite{scale=1.5}></color>\n<b>e_label\n//<size:$TECHN_FONT_SIZE>[e_techn]</size>//\n\n e_descr" as e_alias <<e_stereo>>
-!enddefinelong
-
-!definelong SAPField(e_label, e_techn, e_color, e_sprite)
-{field} <color:e_color><$e_sprite></color>     e_label [e_techn]
-!enddefinelong
-
-sprite $fkey [16x14/16z] JOk92G1138IoQM3wx_OG1Y_kAv8f2OpQvtVYEmxN7-YJx38YOLy_6dkFtJ5xrLwr0zxd0m
-!definelong SAPKeyField(e_label, e_techn, e_color, e_sprite)
-{field} <color:e_color><$e_sprite><$fkey></color> e_label [e_techn]
-!enddefinelong
-
-!definelong SAPRule(e_label, e_out, e_in, e_color, e_sprite)
-{method} <color:e_color><$e_sprite></color>\t e_out:e_label(e_in)
-!enddefinelong
-!definelong SAPRule(e_label, e_out, e_in, e_color, e_sprite, e_sudo)
-....
-{method} <color:e_color><$e_sprite></color>\t e_out:e_label(e_in) \n\t{\ne_sudo\n\t}
-....
-!enddefinelong
-
-
-!definelong component(e_label, e_techn)
-component "<b>e_label\n//<size:$TECHN_FONT_SIZE>[e_techn]</size>//" as e_techn
-!enddefinelong
-
-!definelong component(e_label, e_techn, e_alias)
-component "<b>e_label\n//<size:$TECHN_FONT_SIZE>[e_techn]</size>//" as e_alias
-!enddefinelong
-
-!definelong component(e_label, e_techn, e_alias, e_descr)
-component "<b>e_label\n//<size:$TECHN_FONT_SIZE>[e_techn]</size>//\n\n e_descr" as e_alias
-!enddefinelong
-
-
-sprite $sapSystem [16x14/16z] ZST70e1020J1pHpd_xzr6lD9UmDK-KZlkaftbP5JVT8n-jDmFWpBmz2k3iEdJJmf1DD7y4yR
-SAPEntityColoring(sapSystem)
-!define sapSystem(e_label, e_techn) SAPEntity(e_techn, e_label, e_techn, #154360, sapSystem, sapSystem)
-!define sapSystem(e_label, e_techn, e_alias) SAPEntity(e_alias, e_label, e_techn, #154360, sapSystem, sapSystem)
-!define sapSystem(e_label, e_techn, e_alias, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, #154360, sapSystem, sapSystem)
-
+'Archimate style
+'-------------------------------
+'Flow (archimate)
 !definelong rel_flow(e_from, e_to)
 e_from --> e_to
 !enddefinelong
@@ -160,7 +11,7 @@ e_from e_arrow e_to
 e_from e_arrow e_to : e_message
 !enddefinelong
 
-
+'Association (archimate) 
 !definelong rel_association(e_from, e_to)
 e_from - e_to
 !enddefinelong
@@ -168,12 +19,15 @@ e_from - e_to
 e_from e_arrow e_to
 !enddefinelong
 
+'For improved layout control
+'---------------------------------
 !unquoted function rel_hidden($e_from, $e_to, $e_dir="up")
 $e_from -[hidden]$e_dir- $e_to
 !endfunction
 
-
 'ERD Relationships
+'------------------------------
+'1 to many
 !definelong rel_1_to_n(e_from, e_to)
 e_from ||--{ e_to
 !enddefinelong
@@ -206,6 +60,7 @@ e_from ||-right-{ e_to : e_message
 e_from ||-down-{ e_to : e_message
 !enddefinelong
 
+'0 to many
 !definelong rel_0_to_n(e_from, e_to)
 e_from |o--{ e_to
 !enddefinelong
@@ -238,6 +93,7 @@ e_from |o-down-{ e_to : e_message
 e_from |o-up-{ e_to : e_message
 !enddefinelong
 
+'many to many
 !definelong rel_n_to_n(e_from, e_to)
 e_from }--{ e_to
 !enddefinelong
@@ -270,14 +126,15 @@ e_from }-down-{ e_to : e_message
 e_from }-up-{ e_to : e_message
 !enddefinelong
 
+'unknown
 !definelong rel_unknown(e_from, e_to)
 e_from -- e_to
 !enddefinelong
-
 !definelong rel_unknown(e_from, e_to, e_message)
 e_from -- e_to : e_message
 !enddefinelong
 
+'many to 1
 !definelong rel_n_to_1(e_from, e_to)
 e_from }--|| e_to
 !enddefinelong
@@ -311,6 +168,7 @@ e_from }-right-|| e_to : e_message
 e_from }-down-|| e_to : e_message
 !enddefinelong
 
+'many to 0
 !definelong rel_n_to_0(e_from, e_to)
 e_from }--o| e_to
 !enddefinelong
@@ -343,6 +201,7 @@ e_from }-up-o| e_to : e_message
 e_from }-down-o| e_to : e_message
 !enddefinelong
 
+'many to 1
 !definelong rel_1_to_1(e_from, e_to)
 e_from ||--|| e_to
 !enddefinelong
@@ -375,6 +234,7 @@ e_from ||-right-|| e_to : e_message
 e_from ||-down-|| e_to : e_message
 !enddefinelong
 
+'0 to 1
 !definelong rel_0_to_1(e_from, e_to)
 e_from |o--|| e_to
 !enddefinelong
@@ -407,6 +267,7 @@ e_from |o-right-|| e_to : e_message
 e_from |o-down-|| e_to : e_message
 !enddefinelong
 
+'1 to 0
 !definelong rel_1_to_0(e_from, e_to)
 e_from ||--o| e_to
 !enddefinelong
