@@ -1,0 +1,32 @@
+
+' Layout
+' ##################################
+!definelong FOR_DISCUSSION
+    skinparam backgroundColor white
+    skinparam handwritten true
+'   skinparam defaultFontName "Comic Sans MS"
+'	skinparam defaultFontName "Ink Free"
+'	skinparam defaultFontName "Segoe Print"
+' PlantUML has a whole lot of Google Fonts available :)
+'	skinparam defaultFontName "Courgette"
+'	skinparam defaultFontName "Architects Daughter"
+'	skinparam defaultFontName "Permanent Marker"
+'	skinparam defaultFontName "Delius Swash Caps"
+'	skinparam defaultFontName "Zhi Mang Xing"
+'	skinparam defaultFontName "Amita"
+'	skinparam defaultFontName "Norican"
+'	skinparam defaultFontName "Rancho"
+	skinparam defaultFontName "Merienda"
+'	skinparam defaultFontName "Dancing Script"
+'	skinparam defaultFontName "Comfortaa"
+'	skinparam defaultFontName "Lemon"
+'	skinparam defaultFontName "Finger Paint"
+'	skinparam defaultFontName "Salsa"
+'	skinparam defaultFontName "Mogra"
+'	skinparam defaultFontName "Amatic SC"
+	
+    center footer "For discussion, needs to be validated"
+!enddefinelong
+
+!define LAYOUT_TOP_DOWN top to bottom direction
+!define LAYOUT_LEFT_RIGHT left to right direction

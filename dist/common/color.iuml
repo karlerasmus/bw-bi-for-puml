@@ -1,8 +1,7 @@
 
 ' Colors
 ' -------------------------------
-!$SAP_COLOR = "#154360"
+'!$SAP_COLOR = "#154360" used?
 !$SAP_BG_COLOR =  "#TECHNOLOGY"
 !$SAP_BORDER_COLOR = "#7B7D7D"
-'!$SAP_SYMBOL_COLOR = $SAP_COLOR
 !$SAP_ICON_COLOR = "#154360"
