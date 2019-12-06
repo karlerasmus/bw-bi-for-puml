@@ -5,6 +5,7 @@
 !include $dist/common/style.iuml
 !include $dist/sap-bw/style.iuml
 !include $dist/sap-hana/style.iuml
+!include $dist/common/common.iuml
 !include $dist/sap-bw/sprites.iuml
 !include $dist/sap-hana/sprites.iuml
 !include $dist/common/participants.iuml
