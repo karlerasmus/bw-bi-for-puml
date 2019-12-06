@@ -10,5 +10,6 @@
 !include $dist/common/entities.iuml
 !include $dist/sap-bw/entities.iuml
 !include $dist/sap-hana/entities.iuml
+!include $dist/common/relationships.iuml
 
 allow_mixing
