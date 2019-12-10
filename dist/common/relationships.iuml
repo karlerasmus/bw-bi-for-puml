@@ -21,11 +21,11 @@
 !define rel_association_l(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "-LEFT-")
 !define rel_association_r(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "-RIGHT-")
 
-!define rel_flow(e_From, e_To, e_label="flows to") Rel_(e_From, e_To, e_label, "..>>")
-!define rel_flow_u(e_From, e_To, e_label="flows to") Rel_(e_From, e_To, e_label, ".UP.>>")
-!define rel_flow_d(e_From, e_To, e_label="flows to") Rel_(e_From, e_To, e_label, ".DOWN.>>")
-!define rel_flow_l(e_From, e_To, e_label="flows to") Rel_(e_From, e_To, e_label, ".LEFT.>>")
-!define rel_flow_r(e_From, e_To, e_label="flows to") Rel_(e_From, e_To, e_label, ".RIGHT.>>")
+!define rel_flow(e_From, e_To, e_label="flows to") Rel_(e_From, e_To, e_label, "..>")
+!define rel_flow_u(e_From, e_To, e_label="flows to") Rel_(e_From, e_To, e_label, ".UP.>")
+!define rel_flow_d(e_From, e_To, e_label="flows to") Rel_(e_From, e_To, e_label, ".DOWN.>")
+!define rel_flow_l(e_From, e_To, e_label="flows to") Rel_(e_From, e_To, e_label, ".LEFT.>")
+!define rel_flow_r(e_From, e_To, e_label="flows to") Rel_(e_From, e_To, e_label, ".RIGHT.>")
 
 
 
