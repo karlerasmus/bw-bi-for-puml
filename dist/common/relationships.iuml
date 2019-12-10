@@ -1,23 +1,33 @@
 'Archimate style
 '-------------------------------
-'Flow (archimate)
-!definelong rel_flow(e_from, e_to)
-e_from --> e_to
-!enddefinelong
-!definelong rel_flow(e_from, e_to, e_arrow)
-e_from e_arrow e_to
-!enddefinelong
-!definelong rel_flow(e_from, e_to, e_arrow, e_message)
-e_from e_arrow e_to : e_message
-!enddefinelong
 
-'Association (archimate) 
-!definelong rel_association(e_from, e_to)
-e_from - e_to
-!enddefinelong
-!definelong rel_association(e_from, e_to, e_arrow)
-e_from e_arrow e_to
-!enddefinelong
+!define Rel_(e_sourceAlias, e_targetAlias, e_label, e_direction="") e_sourceAlias e_direction e_targetAlias : "e_label"
+
+!define rel_composition(e_From, e_To, e_label="is composed of") Rel_(e_From, e_To, e_label, "*--")
+!define rel_composition_u(e_From, e_To, e_label="is composed of") Rel_(e_From, e_To, e_label, "*-UP-")
+!define rel_composition_d(e_From, e_To, e_label="is composed of") Rel_(e_From, e_To, e_label, "*-DOWN-")
+!define rel_composition_l(e_From, e_To, e_label="is composed of") Rel_(e_From, e_To, e_label, "*-LEFT-")
+!define rel_composition_r(e_From, e_To, e_label="is composed of") Rel_(e_From, e_To, e_label, "*-RIGHT-")
+
+!define rel_aggregation(e_From, e_To, e_label="is aggregation of") Rel_(e_From, e_To, e_label, "o--")
+!define rel_aggregation_u(e_From, e_To, e_label="is aggregation of") Rel_(e_From, e_To, e_label, "o-UP-")
+!define rel_aggregation_d(e_From, e_To, e_label="is aggregation of") Rel_(e_From, e_To, e_label, "o-DOWN-")
+!define rel_aggregation_l(e_From, e_To, e_label="is aggregation of") Rel_(e_From, e_To, e_label, "o-LEFT-")
+!define rel_aggregation_r(e_From, e_To, e_label="is aggregation of") Rel_(e_From, e_To, e_label, "o-RIGHT-")
+
+!define rel_association(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "--")
+!define rel_association_u(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "-UP-")
+!define rel_association_d(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "-DOWN-")
+!define rel_association_l(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "-LEFT-")
+!define rel_association_r(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "-RIGHT-")
+
+!define rel_flow(e_From, e_To, e_label="flows to") Rel_(e_From, e_To, e_label, "..>>")
+!define rel_flow_u(e_From, e_To, e_label="flows to") Rel_(e_From, e_To, e_label, ".UP.>>")
+!define rel_flow_d(e_From, e_To, e_label="flows to") Rel_(e_From, e_To, e_label, ".DOWN.>>")
+!define rel_flow_l(e_From, e_To, e_label="flows to") Rel_(e_From, e_To, e_label, ".LEFT.>>")
+!define rel_flow_r(e_From, e_To, e_label="flows to") Rel_(e_From, e_To, e_label, ".RIGHT.>>")
+
+
 
 'For improved layout control
 '---------------------------------

@@ -4,21 +4,105 @@
 
 !define measure(e_label, e_techn) SAPField(e_label, e_techn, #F39C12, measure)
 
-!define calcView(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, calcView, calcView)
-!define calcView(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, calcView, calcView)
-!define calcView(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, calcView, calcView)
+'!define calcView(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, calcView, calcView)
+'!define calcView(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, calcView, calcView)
+'!define calcView(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, calcView, calcView)
+!unquoted function calcView($e_label, $e_techn, $e_grp="" )
+!if ($e_grp == "") 
+ SAPClass($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, calcView, calcView)
+!else
+ SAPEntity($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, calcView, calcView)
+!endif
+!endfunction
+!unquoted function calcView($e_label, $e_techn, $e_grp="", $e_alias)
+!if ($e_grp == "")
+ SAPClass($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, calcView, calcView)
+!else
+ SAPEntity($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, calcView, calcView)
+!endif
+!endfunction
+!unquoted function calcView($e_label, $e_techn, $e_grp="",$e_alias, $e_descr)
+!if ($e_grp == "")
+ SAPClass($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, calcView, calcView)
+!else
+ SAPEntity($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, calcView, calcView)
+!endif
+!endfunction
 
-!define analyticView(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, analyticView, analyticView)
-!define analyticView(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, analyticView, analyticView)
-!define analyticView(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, analyticView, analyticView)
+'!define analyticView(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, analyticView, analyticView)
+'!define analyticView(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, analyticView, analyticView)
+'!define analyticView(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, analyticView, analyticView)
+!unquoted function analyticView($e_label, $e_techn, $e_grp="" )
+!if ($e_grp == "") 
+ SAPClass($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, analyticView, analyticView)
+!else
+ SAPEntity($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, analyticView, analyticView)
+!endif
+!endfunction
+!unquoted function analyticView($e_label, $e_techn, $e_grp="", $e_alias)
+!if ($e_grp == "")
+ SAPClass($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, analyticView, analyticView)
+!else
+ SAPEntity($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, analyticView, analyticView)
+!endif
+!endfunction
+!unquoted function analyticView($e_label, $e_techn, $e_grp="",$e_alias, $e_descr)
+!if ($e_grp == "")
+ SAPClass($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, analyticView, analyticView)
+!else
+ SAPEntity($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, analyticView, analyticView)
+!endif
+!endfunction
 
-!define attributeView(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, dimension, attributeView)
-!define attributeView(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, dimension, attributeView)
-!define attributeView(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, dimension, attributeView)
+'!define attributeView(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, dimension, attributeView)
+'!define attributeView(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, dimension, attributeView)
+'!define attributeView(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, dimension, attributeView)
+!unquoted function attributeView($e_label, $e_techn, $e_grp="" )
+!if ($e_grp == "") 
+ SAPClass($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, attributeView, attributeView)
+!else
+ SAPEntity($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, attributeView, attributeView)
+!endif
+!endfunction
+!unquoted function attributeView($e_label, $e_techn, $e_grp="", $e_alias)
+!if ($e_grp == "")
+ SAPClass($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, attributeView, attributeView)
+!else
+ SAPEntity($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, attributeView, attributeView)
+!endif
+!endfunction
+!unquoted function attributeView($e_label, $e_techn, $e_grp="",$e_alias, $e_descr)
+!if ($e_grp == "")
+ SAPClass($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, attributeView, attributeView)
+!else
+ SAPEntity($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, attributeView, attributeView)
+!endif
+!endfunction
 
-!define aggregation(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, aggregation, aggregation)
-!define aggregation(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, aggregation, aggregation)
-!define aggregation(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, aggregation, aggregation)
+'!define aggregation(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, aggregation, aggregation)
+'!define aggregation(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, aggregation, aggregation)
+'!define aggregation(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, aggregation, aggregation)
+!unquoted function aggregation($e_label, $e_techn, $e_grp="" )
+!if ($e_grp == "") 
+ SAPClass($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, aggregation, aggregation)
+!else
+ SAPEntity($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, aggregation, aggregation)
+!endif
+!endfunction
+!unquoted function aggregation($e_label, $e_techn, $e_grp="", $e_alias)
+!if ($e_grp == "")
+ SAPClass($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, aggregation, aggregation)
+!else
+ SAPEntity($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, aggregation, aggregation)
+!endif
+!endfunction
+!unquoted function aggregation($e_label, $e_techn, $e_grp="",$e_alias, $e_descr)
+!if ($e_grp == "")
+ SAPClass($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, aggregation, aggregation)
+!else
+ SAPEntity($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, aggregation, aggregation)
+!endif
+!endfunction
 
 !define decisionTable(e_label, e_techn) SAPEntity(e_techn, e_label, e_techn, $SAP_ICON_COLOR, decisionTable, decisionTable)
 !define decisionTable(e_label, e_techn, e_alias) SAPEntity(e_alias, e_label, e_techn, $SAP_ICON_COLOR, decisionTable, decisionTable)
@@ -32,21 +116,105 @@
 !define scalarFunction(e_label, e_techn, e_alias) SAPEntity(e_alias, e_label, e_techn, $SAP_ICON_COLOR, scalarFunction, scalarFunction)
 !define scalarFunction(e_label, e_techn, e_alias, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, scalarFunction, scalarFunction)
 
-!define innerJoin(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, innerJoin, innerJoin)
-!define innerJoin(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, innerJoin, innerJoin)
-!define innerJoin(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, innerJoin, innerJoin)
+'!define innerJoin(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, innerJoin, innerJoin)
+'!define innerJoin(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, innerJoin, innerJoin)
+'!define innerJoin(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, innerJoin, innerJoin)
+!unquoted function innerJoin($e_label, $e_techn, $e_grp="" )
+!if ($e_grp == "") 
+ SAPClass($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, innerJoin, innerJoin)
+!else
+ SAPEntity($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, innerJoin, innerJoin)
+!endif
+!endfunction
+!unquoted function innerJoin($e_label, $e_techn, $e_grp="", $e_alias)
+!if ($e_grp == "")
+ SAPClass($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, innerJoin, innerJoin)
+!else
+ SAPEntity($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, innerJoin, innerJoin)
+!endif
+!endfunction
+!unquoted function innerJoin($e_label, $e_techn, $e_grp="",$e_alias, $e_descr)
+!if ($e_grp == "")
+ SAPClass($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, innerJoin, innerJoin)
+!else
+ SAPEntity($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, innerJoin, innerJoin)
+!endif
+!endfunction
 
-!define leftJoin(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, leftJoin, leftJoin)
-!define leftJoin(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, leftJoin, leftJoin)
-!define leftJoin(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, leftJoin, leftJoin)
+'!define leftJoin(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, leftJoin, leftJoin)
+'!define leftJoin(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, leftJoin, leftJoin)
+'!define leftJoin(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, leftJoin, leftJoin)
+!unquoted function leftJoin($e_label, $e_techn, $e_grp="" )
+!if ($e_grp == "") 
+ SAPClass($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, leftJoin, leftJoin)
+!else
+ SAPEntity($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, leftJoin, leftJoin)
+!endif
+!endfunction
+!unquoted function leftJoin($e_label, $e_techn, $e_grp="", $e_alias)
+!if ($e_grp == "")
+ SAPClass($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, leftJoin, leftJoin)
+!else
+ SAPEntity($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, leftJoin, leftJoin)
+!endif
+!endfunction
+!unquoted function leftJoin($e_label, $e_techn, $e_grp="",$e_alias, $e_descr)
+!if ($e_grp == "")
+ SAPClass($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, leftJoin, leftJoin)
+!else
+ SAPEntity($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, leftJoin, leftJoin)
+!endif
+!endfunction
 
-!define scriptView(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, scriptView, scriptView)
-!define scriptView(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, scriptView, scriptView)
-!define scriptView(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, scriptView, scriptView)
+'!define scriptView(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, scriptView, scriptView)
+'!define scriptView(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, scriptView, scriptView)
+'!define scriptView(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, scriptView, scriptView)
+!unquoted function scriptView($e_label, $e_techn, $e_grp="" )
+!if ($e_grp == "") 
+ SAPClass($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, scriptView, scriptView)
+!else
+ SAPEntity($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, scriptView, scriptView)
+!endif
+!endfunction
+!unquoted function scriptView($e_label, $e_techn, $e_grp="", $e_alias)
+!if ($e_grp == "")
+ SAPClass($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, scriptView, scriptView)
+!else
+ SAPEntity($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, scriptView, scriptView)
+!endif
+!endfunction
+!unquoted function scriptView($e_label, $e_techn, $e_grp="",$e_alias, $e_descr)
+!if ($e_grp == "")
+ SAPClass($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, scriptView, scriptView)
+!else
+ SAPEntity($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, scriptView, scriptView)
+!endif
+!endfunction
 
-!define outerJoin(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, outerJoin, outerJoin)
-!define outerJoin(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, outerJoin, outerJoin)
-!define outerJoin(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, outerJoin, outerJoin)
+'!define outerJoin(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, outerJoin, outerJoin)
+'!define outerJoin(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, outerJoin, outerJoin)
+'!define outerJoin(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, outerJoin, outerJoin)
+!unquoted function outerJoin($e_label, $e_techn, $e_grp="" )
+!if ($e_grp == "") 
+ SAPClass($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, outerJoin, outerJoin)
+!else
+ SAPEntity($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, outerJoin, outerJoin)
+!endif
+!endfunction
+!unquoted function outerJoin($e_label, $e_techn, $e_grp="", $e_alias)
+!if ($e_grp == "")
+ SAPClass($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, outerJoin, outerJoin)
+!else
+ SAPEntity($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, outerJoin, outerJoin)
+!endif
+!endfunction
+!unquoted function outerJoin($e_label, $e_techn, $e_grp="",$e_alias, $e_descr)
+!if ($e_grp == "")
+ SAPClass($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, outerJoin, outerJoin)
+!else
+ SAPEntity($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, outerJoin, outerJoin)
+!endif
+!endfunction
 
 !define package(e_label, e_techn) SAPEntity(e_techn, e_label, e_techn, $SAP_ICON_COLOR, package, package)
 !define package(e_label, e_techn, e_alias) SAPEntity(e_alias, e_label, e_techn, $SAP_ICON_COLOR, package, package)
@@ -56,33 +224,159 @@
 !define dbProcedure(e_label, e_techn, e_alias) SAPEntity(e_alias, e_label, e_techn, $SAP_ICON_COLOR, procedure, procedure)
 !define dbProcedure(e_label, e_techn, e_alias, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, procedure, procedure)
 
-!define projection(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, projection, projection)
-!define projection(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, projection, projection)
-!define projection(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, projection, projection)
+'!define projection(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, projection, projection)
+'!define projection(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, projection, projection)
+'!define projection(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, projection, projection)
+!unquoted function projection($e_label, $e_techn, $e_grp="" )
+!if ($e_grp == "") 
+ SAPClass($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, projection, projection)
+!else
+ SAPEntity($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, projection, projection)
+!endif
+!endfunction
+!unquoted function projection($e_label, $e_techn, $e_grp="", $e_alias)
+!if ($e_grp == "")
+ SAPClass($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, projection, projection)
+!else
+ SAPEntity($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, projection, projection)
+!endif
+!endfunction
+!unquoted function projection($e_label, $e_techn, $e_grp="",$e_alias, $e_descr)
+!if ($e_grp == "")
+ SAPClass($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, projection, projection)
+!else
+ SAPEntity($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, projection, projection)
+!endif
+!endfunction
 
-!define rank(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, rank, rank)
-!define rank(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, rank, rank)
-!define rank(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, rank, rank)
+'!define rank(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, rank, rank)
+'!define rank(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, rank, rank)
+'!define rank(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, rank, rank)
+!unquoted function rank($e_label, $e_techn, $e_grp="" )
+!if ($e_grp == "") 
+ SAPClass($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, rank, rank)
+!else
+ SAPEntity($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, rank, rank)
+!endif
+!endfunction
+!unquoted function rank($e_label, $e_techn, $e_grp="", $e_alias)
+!if ($e_grp == "")
+ SAPClass($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, rank, rank)
+!else
+ SAPEntity($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, rank, rank)
+!endif
+!endfunction
+!unquoted function rank($e_label, $e_techn, $e_grp="",$e_alias, $e_descr)
+!if ($e_grp == "")
+ SAPClass($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, rank, rank)
+!else
+ SAPEntity($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, rank, rank)
+!endif
+!endfunction
 
-!define rightJoin(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, rightJoin, rightJoin)
-!define rightJoin(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, rightJoin, rightJoin)
-!define rightJoin(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, rightJoin, rightJoin)
+'!define rightJoin(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, rightJoin, rightJoin)
+'!define rightJoin(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, rightJoin, rightJoin)
+'!define rightJoin(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, rightJoin, rightJoin)
+!unquoted function rightJoin($e_label, $e_techn, $e_grp="" )
+!if ($e_grp == "") 
+ SAPClass($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, rightJoin, rightJoin)
+!else
+ SAPEntity($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, rightJoin, rightJoin)
+!endif
+!endfunction
+!unquoted function rightJoin($e_label, $e_techn, $e_grp="", $e_alias)
+!if ($e_grp == "")
+ SAPClass($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, rightJoin, rightJoin)
+!else
+ SAPEntity($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, rightJoin, rightJoin)
+!endif
+!endfunction
+!unquoted function rightJoin($e_label, $e_techn, $e_grp="",$e_alias, $e_descr)
+!if ($e_grp == "")
+ SAPClass($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, rightJoin, rightJoin)
+!else
+ SAPEntity($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, rightJoin, rightJoin)
+!endif
+!endfunction
 
 !define schema(e_label, e_techn) SAPEntity(e_techn, e_label, e_techn, $SAP_ICON_COLOR, schema, schema)
 !define schema(e_label, e_techn, e_alias) SAPEntity(e_alias, e_label, e_techn, $SAP_ICON_COLOR, schema, schema)
 !define schema(e_label, e_techn, e_alias, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, schema, schema)
 
-!define starJoin(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, starJoin, starJoin)
-!define starJoin(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, starJoin, starJoin)
-!define starJoin(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, starJoin, starJoin)
+'!define starJoin(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, starJoin, starJoin)
+'!define starJoin(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, starJoin, starJoin)
+'!define starJoin(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, starJoin, starJoin)
+!unquoted function starJoin($e_label, $e_techn, $e_grp="" )
+!if ($e_grp == "") 
+ SAPClass($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, starJoin, starJoin)
+!else
+ SAPEntity($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, starJoin, starJoin)
+!endif
+!endfunction
+!unquoted function starJoin($e_label, $e_techn, $e_grp="", $e_alias)
+!if ($e_grp == "")
+ SAPClass($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, starJoin, starJoin)
+!else
+ SAPEntity($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, starJoin, starJoin)
+!endif
+!endfunction
+!unquoted function starJoin($e_label, $e_techn, $e_grp="",$e_alias, $e_descr)
+!if ($e_grp == "")
+ SAPClass($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, starJoin, starJoin)
+!else
+ SAPEntity($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, starJoin, starJoin)
+!endif
+!endfunction
 
-!define join(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, unknownJoin, join)
-!define join(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, unknownJoin, join)
-!define join(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, unknownJoin, join)
+'!define join(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, unknownJoin, join)
+'!define join(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, unknownJoin, join)
+'!define join(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, unknownJoin, join)
+!unquoted function join($e_label, $e_techn, $e_grp="" )
+!if ($e_grp == "") 
+ SAPClass($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, unknownJoin, join)
+!else
+ SAPEntity($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, unknownJoin, join)
+!endif
+!endfunction
+!unquoted function join($e_label, $e_techn, $e_grp="", $e_alias)
+!if ($e_grp == "")
+ SAPClass($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, unknownJoin, join)
+!else
+ SAPEntity($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, unknownJoin, join)
+!endif
+!endfunction
+!unquoted function join($e_label, $e_techn, $e_grp="",$e_alias, $e_descr)
+!if ($e_grp == "")
+ SAPClass($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, unknownJoin, join)
+!else
+ SAPEntity($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, unknownJoin, join)
+!endif
+!endfunction
 
-!define union(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, union, union)
-!define union(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, union, union)
-!define union(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, union, union)
+'!define union(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, union, union)
+'!define union(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, union, union)
+'!define union(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, union, union)
+!unquoted function union($e_label, $e_techn, $e_grp="" )
+!if ($e_grp == "") 
+ SAPClass($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, union, union)
+!else
+ SAPEntity($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, union, union)
+!endif
+!endfunction
+!unquoted function union($e_label, $e_techn, $e_grp="", $e_alias)
+!if ($e_grp == "")
+ SAPClass($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, union, union)
+!else
+ SAPEntity($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, union, union)
+!endif
+!endfunction
+!unquoted function union($e_label, $e_techn, $e_grp="",$e_alias, $e_descr)
+!if ($e_grp == "")
+ SAPClass($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, union, union)
+!else
+ SAPEntity($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, union, union)
+!endif
+!endfunction
 
 !define table(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, table, table)
 !define table(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, table, table)
@@ -92,6 +386,27 @@
 !define virtualTable(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, virtualTable, virtualTable)
 !define virtualTable(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, virtualTable, virtualTable)
 
-!define view(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, view, view)
-!define view(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, view, view)
-!define view(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, view, view)
+'!define view(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, view, view)
+'!define view(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, view, view)
+'!define view(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, view, view)
+!unquoted function view($e_label, $e_techn, $e_grp="" )
+!if ($e_grp == "") 
+ SAPClass($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, view, view)
+!else
+ SAPEntity($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, view, view)
+!endif
+!endfunction
+!unquoted function view($e_label, $e_techn, $e_grp="", $e_alias)
+!if ($e_grp == "")
+ SAPClass($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, view, view)
+!else
+ SAPEntity($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, view, view)
+!endif
+!endfunction
+!unquoted function view($e_label, $e_techn, $e_grp="",$e_alias, $e_descr)
+!if ($e_grp == "")
+ SAPClass($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, view, view)
+!else
+ SAPEntity($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, view, view)
+!endif
+!endfunction

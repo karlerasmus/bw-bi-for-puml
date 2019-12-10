@@ -40,7 +40,6 @@ component "<b>BEx Queries" as queryLayer #F6DDCC
 !define psa(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, psa, psa)
 !define psa(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, psa, psa)
 
-
 !define dso(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, dso, dso)
 !define dso(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, dso, dso)
 !define dso(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, dso, dso)
@@ -73,9 +72,30 @@ component "<b>BEx Queries" as queryLayer #F6DDCC
 !define advancedDsoCube(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, cube, adsoCube)
 !define advancedDsoCube(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, cube, adsoCube)
 
-!define multiProvider(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, multi, multiProvider)
-!define multiProvider(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, multi, multiProvider)
-!define multiProvider(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, multi, multiProvider)
+'!define multiProvider(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, multi, multiProvider)
+'!define multiProvider(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, multi, multiProvider)
+'!define multiProvider(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, multi, multiProvider)
+!unquoted function multiProvider($e_label, $e_techn, $e_grp="" )
+!if ($e_grp == "") 
+ SAPClass($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, multi, multiProvider)
+!else
+ SAPEntity($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, multi, multiProvider)
+!endif
+!endfunction
+!unquoted function multiProvider($e_label, $e_techn, $e_grp="", $e_alias)
+!if ($e_grp == "")
+ SAPClass($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, multi, multiProvider)
+!else
+ SAPEntity($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, multi, multiProvider)
+!endif
+!endfunction
+!unquoted function multiProvider($e_label, $e_techn, $e_grp="",$e_alias, $e_descr)
+!if ($e_grp == "")
+ SAPClass($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, multi, multiProvider)
+!else
+ SAPEntity($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, multi, multiProvider)
+!endif
+!endfunction
 
 !define transformation(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, transformation, transformation)
 !define transformation(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, transformation, transformation)
@@ -89,13 +109,56 @@ component "<b>BEx Queries" as queryLayer #F6DDCC
 !define dtp(e_label, e_techn, e_alias) SAPEntity(e_alias, e_label, e_techn, $SAP_ICON_COLOR, dtp, dtp)
 !define dtp(e_label, e_techn, e_alias, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, dtp, dtp)
 
-!define infoset(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, infoset, infoset)
-!define infoset(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, infoset, infoset)
-!define infoset(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, infoset, infoset)
+'!define infoset(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, infoset, infoset)
+'!define infoset(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, infoset, infoset)
+'!define infoset(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, infoset, infoset)
+!unquoted function infoset($e_label, $e_techn, $e_grp="" )
+!if ($e_grp == "") 
+ SAPClass($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, infoset, infoset)
+!else
+ SAPEntity($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, infoset, infoset)
+!endif
+!endfunction
+!unquoted function infoset($e_label, $e_techn, $e_grp="", $e_alias)
+!if ($e_grp == "")
+ SAPClass($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, infoset, infoset)
+!else
+ SAPEntity($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, infoset, infoset)
+!endif
+!endfunction
+!unquoted function infoset($e_label, $e_techn, $e_grp="",$e_alias, $e_descr)
+!if ($e_grp == "")
+ SAPClass($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, infoset, infoset)
+!else
+ SAPEntity($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, infoset, infoset)
+!endif
+!endfunction
 
-!define compositeProvider(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, compositeProvider, compositeProvider)
-!define compositeProvider(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, compositeProvider, compositeProvider)
-!define compositeProvider(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, compositeProvider, compositeProvider)
+
+'!define compositeProvider(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, compositeProvider, compositeProvider)
+'!define compositeProvider(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, compositeProvider, compositeProvider)
+'!define compositeProvider(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, compositeProvider, compositeProvider)
+!unquoted function compositeProvider($e_label, $e_techn, $e_grp="" )
+!if ($e_grp == "") 
+ SAPClass($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, compositeProvider, compositeProvider)
+!else
+ SAPEntity($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, compositeProvider, compositeProvider)
+!endif
+!endfunction
+!unquoted function compositeProvider($e_label, $e_techn, $e_grp="", $e_alias)
+!if ($e_grp == "")
+ SAPClass($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, compositeProvider, compositeProvider)
+!else
+ SAPEntity($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, compositeProvider, compositeProvider)
+!endif
+!endfunction
+!unquoted function compositeProvider($e_label, $e_techn, $e_grp="",$e_alias, $e_descr)
+!if ($e_grp == "")
+ SAPClass($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, compositeProvider, compositeProvider)
+!else
+ SAPEntity($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, compositeProvider, compositeProvider)
+!endif
+!endfunction
 
 !define infoobject(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, infoobject, infoobject)
 !define infoobject(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, infoobject, infoobject)
@@ -178,6 +241,27 @@ SAPRule($rule, e_out, e_in, $SAP_ICON_COLOR, infoobject)
 !define analysisProcess(e_label, e_techn) SAPEntity(e_techn, e_label, e_techn, $SAP_ICON_COLOR, analysisProcess, analysisProcess)
 !define analysisProcess(e_label, e_techn, e_alias) SAPEntity(e_alias, e_label, e_techn, $SAP_ICON_COLOR, analysisProcess, analysisProcess)
 !define analysisProcess(e_label, e_techn, e_alias, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, analysisProcess, analysisProcess)
+!unquoted function analysisProcess($e_label, $e_techn, $e_grp="" )
+!if ($e_grp == "") 
+ SAPClass($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, analysisProcess, analysisProcess)
+!else
+ SAPEntity($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, analysisProcess, analysisProcess)
+!endif
+!endfunction
+!unquoted function analysisProcess($e_label, $e_techn, $e_grp="", $e_alias)
+!if ($e_grp == "")
+ SAPClass($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, analysisProcess, analysisProcess)
+!else
+ SAPEntity($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, analysisProcess, analysisProcess)
+!endif
+!endfunction
+!unquoted function analysisProcess($e_label, $e_techn, $e_grp="",$e_alias, $e_descr)
+!if ($e_grp == "")
+ SAPClass($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, analysisProcess, analysisProcess)
+!else
+ SAPEntity($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, analysisProcess, analysisProcess)
+!endif
+!endfunction
 
 !define infoSource(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, infoSource, infoSource)
 !define infoSource(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, infoSource, infoSource)
