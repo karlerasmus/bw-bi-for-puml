@@ -1,276 +1,452 @@
 'SPDX-License-Identifier: GPL-3.0-or-later
 
-!definelong stagingLayer()
+!unquoted procedure stagingLayer()
 component "<b>Staging Layer" as stagingLayer #FADBD8
-!enddefinelong
+!endprocedure
 
-!definelong dataMartLayer()
+!unquoted procedure dataMartLayer()
 component "<b>Data Mart Layer" as dataMartLayer #F6DDCC
-!enddefinelong
+!endprocedure
 
-!definelong virtualDataMartLayer()
+!unquoted procedure virtualDataMartLayer()
 component "<b>Virtual Data\n<b>Mart Layer" as virtualDataMartLayer #EAF2F8
-!enddefinelong
+!endprocedure
 
-!definelong dataWarehouseLayer()
+!unquoted procedure dataWarehouseLayer()
 component "<b>Data Warehouse Layer" as dataWarehouseLayer #D1F2EB
-!enddefinelong
+!endprocedure
 
-!definelong corporateMemory()
+!unquoted procedure corporateMemory()
 component "<b>Corporate Memory" as corporateMemory #FCF3CF
-!enddefinelong
+!endprocedure
 
-!definelong queryLayer()
+!unquoted procedure queryLayer()
 component "<b>BEx Queries" as queryLayer #F6DDCC
-!enddefinelong
+!endprocedure
 
-!define sapSystem(e_label, e_techn) SAPEntity(e_techn, e_label, e_techn, $SAP_ICON_COLOR, sapSystem, sapSystem)
-!define sapSystem(e_label, e_techn, e_alias) SAPEntity(e_alias, e_label, e_techn, $SAP_ICON_COLOR, sapSystem, sapSystem)
-!define sapSystem(e_label, e_techn, e_alias, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, sapSystem, sapSystem)
+!unquoted procedure sapSystem(e_label, e_techn)
+SAPEntity(e_techn, e_label, e_techn, $SAP_ICON_COLOR, sapSystem, sapSystem)
+!endprocedure
+!unquoted procedure sapSystem(e_label, e_techn, e_alias)
+SAPEntity(e_alias, e_label, e_techn, $SAP_ICON_COLOR, sapSystem, sapSystem)
+!endprocedure
+!unquoted procedure sapSystem(e_label, e_techn, e_alias, e_descr)
+SAPEntity(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, sapSystem, sapSystem)
+!endprocedure
 
-!define dataSource(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, dataSource, dataSource)
-!define dataSource(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, dataSource, dataSource)
-!define dataSource(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, dataSource, dataSource)
+!unquoted procedure dataSource(e_label, e_techn)
+SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, dataSource, dataSource)
+!endprocedure
+!unquoted procedure dataSource(e_label, e_techn, e_alias)
+SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, dataSource, dataSource)
+!endprocedure
+!unquoted procedure dataSource(e_label, e_techn, e_alias, e_descr)
+SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, dataSource, dataSource)
+!endprocedure
 
-!define sourceSystem(e_label, e_techn) SAPEntity(e_techn, e_label, e_techn, $SAP_ICON_COLOR, sourceSystem, sourceSystem)
-!define sourceSystem(e_label, e_techn, e_alias) SAPEntity(e_alias, e_label, e_techn, $SAP_ICON_COLOR, sourceSystem, sourceSystem)
-!define sourceSystem(e_label, e_techn, e_alias, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, sourceSystem, sourceSystem)
+!unquoted procedure sourceSystem(e_label, e_techn)
+SAPEntity(e_techn, e_label, e_techn, $SAP_ICON_COLOR, sourceSystem, sourceSystem)
+!endprocedure
+!unquoted procedure sourceSystem(e_label, e_techn, e_alias)
+SAPEntity(e_alias, e_label, e_techn, $SAP_ICON_COLOR, sourceSystem, sourceSystem)
+!endprocedure
+!unquoted procedure sourceSystem(e_label, e_techn, e_alias, e_descr)
+SAPEntity(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, sourceSystem, sourceSystem)
+!endprocedure
 
-!define psa(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, psa, psa)
-!define psa(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, psa, psa)
-!define psa(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, psa, psa)
+!unquoted procedure psa(e_label, e_techn)
+SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, psa, psa)
+!endprocedure
+!unquoted procedure psa(e_label, e_techn, e_alias)
+SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, psa, psa)
+!endprocedure
+!unquoted procedure psa(e_label, e_techn, e_alias, e_descr)
+SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, psa, psa)
+!endprocedure
 
-!define dso(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, dso, dso)
-!define dso(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, dso, dso)
-!define dso(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, dso, dso)
+!unquoted procedure dso(e_label, e_techn)
+SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, dso, dso)
+!endprocedure
+!unquoted procedure dso(e_label, e_techn, e_alias)
+SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, dso, dso)
+!endprocedure
+!unquoted procedure dso(e_label, e_techn, e_alias, e_descr)
+SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, dso, dso)
+!endprocedure
 
-!define advancedDso(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, dso, advancedDso)
-!define advancedDso(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, dso, advancedDso)
-!define advancedDso(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, dso, advancedDso)
+!unquoted procedure advancedDso(e_label, e_techn)
+SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, dso, advancedDso)
+!endprocedure
+!unquoted procedure advancedDso(e_label, e_techn, e_alias)
+SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, dso, advancedDso)
+!endprocedure
+!unquoted procedure advancedDso(e_label, e_techn, e_alias, e_descr)
+SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, dso, advancedDso)
+!endprocedure
 
-!define dsoWriteOptimised(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, dso, dsoWriteOptimised)
-!define dsoWriteOptimised(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, dso, dsoWriteOptimised)
-!define dsoWriteOptimised(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, dso, dsoWriteOptimised)
+!unquoted procedure dsoWriteOptimised(e_label, e_techn)
+SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, dso, dsoWriteOptimised)
+!endprocedure
+!unquoted procedure dsoWriteOptimised(e_label, e_techn, e_alias)
+SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, dso, dsoWriteOptimised)
+!endprocedure
+!unquoted procedure dsoWriteOptimised(e_label, e_techn, e_alias, e_descr)
+SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, dso, dsoWriteOptimised)
+!endprocedure
 
-!define advancedDsoWriteOptimised(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, dso, adsoWriteOptimised)
-!define advancedDsoWriteOptimised(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, dso, adsoWriteOptimised)
-!define advancedDsoWriteOptimised(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, dso, adsoWriteOptimised)
+!unquoted procedure advancedDsoWriteOptimised(e_label, e_techn)
+SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, dso, adsoWriteOptimised)
+!endprocedure
+!unquoted procedure advancedDsoWriteOptimised(e_label, e_techn, e_alias)
+SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, dso, adsoWriteOptimised)
+!endprocedure
+!unquoted procedure advancedDsoWriteOptimised(e_label, e_techn, e_alias, e_descr)
+SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, dso, adsoWriteOptimised)
+!endprocedure
 
-!define dsoStandard(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, dso, dsoStandard)
-!define dsoStandard(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, dso, dsoStandard)
-!define dsoStandard(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, dso, dsoStandard)
+!unquoted procedure dsoStandard(e_label, e_techn)
+SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, dso, dsoStandard)
+!endprocedure
+!unquoted procedure dsoStandard(e_label, e_techn, e_alias)
+SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, dso, dsoStandard)
+!endprocedure
+!unquoted procedure dsoStandard(e_label, e_techn, e_alias, e_descr)
+SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, dso, dsoStandard)
+!endprocedure
 
-!define advancedDsoStandard(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, dso, adsoStandard)
-!define advancedDsoStandard(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, dso, adsoStandard)
-!define advancedDsoStandard(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, dso, adsoStandard)
+!unquoted procedure advancedDsoStandard(e_label, e_techn)
+SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, dso, adsoStandard)
+!endprocedure
+!unquoted procedure advancedDsoStandard(e_label, e_techn, e_alias)
+SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, dso, adsoStandard)
+!endprocedure
+!unquoted procedure advancedDsoStandard(e_label, e_techn, e_alias, e_descr)
+SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, dso, adsoStandard)
+!endprocedure
 
-!define cube(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, cube, cube)
-!define cube(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, cube, cube)
-!define cube(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, cube, cube)
+!unquoted procedure cube(e_label, e_techn)
+SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, cube, cube)
+!endprocedure
+!unquoted procedure cube(e_label, e_techn, e_alias)
+SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, cube, cube)
+!endprocedure
+!unquoted procedure cube(e_label, e_techn, e_alias, e_descr)
+SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, cube, cube)
+!endprocedure
 
-!define advancedDsoCube(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, cube, adsoCube)
-!define advancedDsoCube(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, cube, adsoCube)
-!define advancedDsoCube(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, cube, adsoCube)
+!unquoted procedure advancedDsoCube(e_label, e_techn)
+SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, cube, adsoCube)
+!endprocedure
+!unquoted procedure advancedDsoCube(e_label, e_techn, e_alias)
+SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, cube, adsoCube)
+!endprocedure
+!unquoted procedure advancedDsoCube(e_label, e_techn, e_alias, e_descr)
+SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, cube, adsoCube)
+!endprocedure
 
-'!define multiProvider(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, multi, multiProvider)
-'!define multiProvider(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, multi, multiProvider)
-'!define multiProvider(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, multi, multiProvider)
-!unquoted function multiProvider($e_label, $e_techn, $e_grp="" )
-!if ($e_grp == "") 
+'!unquoted procedure multiProvider(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, multi, multiProvider)
+'!unquoted procedure multiProvider(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, multi, multiProvider)
+'!unquoted procedure multiProvider(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, multi, multiProvider)
+!unquoted procedure multiProvider($e_label, $e_techn, $e_grp="" )
+!if ($e_grp == "")
  SAPClass($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, multi, multiProvider)
 !else
  SAPEntity($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, multi, multiProvider)
 !endif
-!endfunction
-!unquoted function multiProvider($e_label, $e_techn, $e_grp="", $e_alias)
+!endprocedure
+!unquoted procedure multiProvider($e_label, $e_techn, $e_grp="", $e_alias)
 !if ($e_grp == "")
  SAPClass($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, multi, multiProvider)
 !else
  SAPEntity($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, multi, multiProvider)
 !endif
-!endfunction
-!unquoted function multiProvider($e_label, $e_techn, $e_grp="",$e_alias, $e_descr)
+!endprocedure
+!unquoted procedure multiProvider($e_label, $e_techn, $e_grp="",$e_alias, $e_descr)
 !if ($e_grp == "")
  SAPClass($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, multi, multiProvider)
 !else
  SAPEntity($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, multi, multiProvider)
 !endif
-!endfunction
+!endprocedure
 
-!define transformation(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, transformation, transformation)
-!define transformation(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, transformation, transformation)
-!define transformation(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, transformation, transformation)
+!unquoted procedure transformation(e_label, e_techn)
+SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, transformation, transformation)
+!endprocedure
+!unquoted procedure transformation(e_label, e_techn, e_alias)
+SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, transformation, transformation)
+!endprocedure
+!unquoted procedure transformation(e_label, e_techn, e_alias, e_descr)
+SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, transformation, transformation)
+!endprocedure
 
-!define infopackage(e_label, e_techn) SAPEntity(e_techn, e_label, e_techn, $SAP_ICON_COLOR, infopackage, infopackage)
-!define infopackage(e_label, e_techn, e_alias) SAPEntity(e_alias, e_label, e_techn, $SAP_ICON_COLOR, infopackage, infopackage)
-!define infopackage(e_label, e_techn, e_alias, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, infopackage, infopackage)
+!unquoted procedure infopackage(e_label, e_techn)
+SAPEntity(e_techn, e_label, e_techn, $SAP_ICON_COLOR, infopackage, infopackage)
+!endprocedure
+!unquoted procedure infopackage(e_label, e_techn, e_alias)
+SAPEntity(e_alias, e_label, e_techn, $SAP_ICON_COLOR, infopackage, infopackage)
+!endprocedure
+!unquoted procedure infopackage(e_label, e_techn, e_alias, e_descr)
+SAPEntity(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, infopackage, infopackage)
+!endprocedure
 
-!define dtp(e_label, e_techn) SAPEntity(e_techn, e_label, e_techn, $SAP_ICON_COLOR, dtp, dtp)
-!define dtp(e_label, e_techn, e_alias) SAPEntity(e_alias, e_label, e_techn, $SAP_ICON_COLOR, dtp, dtp)
-!define dtp(e_label, e_techn, e_alias, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, dtp, dtp)
+!unquoted procedure dtp(e_label, e_techn)
+SAPEntity(e_techn, e_label, e_techn, $SAP_ICON_COLOR, dtp, dtp)
+!endprocedure
+!unquoted procedure dtp(e_label, e_techn, e_alias)
+SAPEntity(e_alias, e_label, e_techn, $SAP_ICON_COLOR, dtp, dtp)
+!endprocedure
+!unquoted procedure dtp(e_label, e_techn, e_alias, e_descr)
+SAPEntity(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, dtp, dtp)
+!endprocedure
 
-'!define infoset(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, infoset, infoset)
-'!define infoset(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, infoset, infoset)
-'!define infoset(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, infoset, infoset)
-!unquoted function infoset($e_label, $e_techn, $e_grp="" )
-!if ($e_grp == "") 
+'!unquoted procedure infoset(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, infoset, infoset)
+'!unquoted procedure infoset(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, infoset, infoset)
+'!unquoted procedure infoset(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, infoset, infoset)
+!unquoted procedure infoset($e_label, $e_techn, $e_grp="" )
+!if ($e_grp == "")
  SAPClass($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, infoset, infoset)
 !else
  SAPEntity($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, infoset, infoset)
 !endif
-!endfunction
-!unquoted function infoset($e_label, $e_techn, $e_grp="", $e_alias)
+!endprocedure
+!unquoted procedure infoset($e_label, $e_techn, $e_grp="", $e_alias)
 !if ($e_grp == "")
  SAPClass($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, infoset, infoset)
 !else
  SAPEntity($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, infoset, infoset)
 !endif
-!endfunction
-!unquoted function infoset($e_label, $e_techn, $e_grp="",$e_alias, $e_descr)
+!endprocedure
+!unquoted procedure infoset($e_label, $e_techn, $e_grp="",$e_alias, $e_descr)
 !if ($e_grp == "")
  SAPClass($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, infoset, infoset)
 !else
  SAPEntity($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, infoset, infoset)
 !endif
-!endfunction
+!endprocedure
 
 
-'!define compositeProvider(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, compositeProvider, compositeProvider)
-'!define compositeProvider(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, compositeProvider, compositeProvider)
-'!define compositeProvider(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, compositeProvider, compositeProvider)
-!unquoted function compositeProvider($e_label, $e_techn, $e_grp="" )
-!if ($e_grp == "") 
+'!unquoted procedure compositeProvider(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, compositeProvider, compositeProvider)
+'!unquoted procedure compositeProvider(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, compositeProvider, compositeProvider)
+'!unquoted procedure compositeProvider(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, compositeProvider, compositeProvider)
+!unquoted procedure compositeProvider($e_label, $e_techn, $e_grp="" )
+!if ($e_grp == "")
  SAPClass($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, compositeProvider, compositeProvider)
 !else
  SAPEntity($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, compositeProvider, compositeProvider)
 !endif
-!endfunction
-!unquoted function compositeProvider($e_label, $e_techn, $e_grp="", $e_alias)
+!endprocedure
+!unquoted procedure compositeProvider($e_label, $e_techn, $e_grp="", $e_alias)
 !if ($e_grp == "")
  SAPClass($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, compositeProvider, compositeProvider)
 !else
  SAPEntity($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, compositeProvider, compositeProvider)
 !endif
-!endfunction
-!unquoted function compositeProvider($e_label, $e_techn, $e_grp="",$e_alias, $e_descr)
+!endprocedure
+!unquoted procedure compositeProvider($e_label, $e_techn, $e_grp="",$e_alias, $e_descr)
 !if ($e_grp == "")
  SAPClass($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, compositeProvider, compositeProvider)
 !else
  SAPEntity($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, compositeProvider, compositeProvider)
 !endif
-!endfunction
+!endprocedure
 
-!define infoobject(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, infoobject, infoobject)
-!define infoobject(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, infoobject, infoobject)
-!define infoobject(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, infoobject, infoobject)
+!unquoted procedure infoobject(e_label, e_techn)
+SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, infoobject, infoobject)
+!endprocedure
+!unquoted procedure infoobject(e_label, e_techn, e_alias)
+SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, infoobject, infoobject)
+!endprocedure
+!unquoted procedure infoobject(e_label, e_techn, e_alias, e_descr)
+SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, infoobject, infoobject)
+!endprocedure
 
-!define kyf(e_label, e_techn) SAPField(e_label, e_techn, $SAP_ICON_COLOR, kyf)
+!unquoted procedure kyf(e_label, e_techn)
+SAPField(e_label, e_techn, $SAP_ICON_COLOR, kyf)
+!endprocedure
 
-!define cha(e_label, e_techn) SAPField(e_label, e_techn, $SAP_ICON_COLOR, cha)
-!unquoted function cha(e_label, e_techn, e_key="")
+!unquoted procedure cha(e_label, e_techn)
+SAPField(e_label, e_techn, $SAP_ICON_COLOR, cha)
+!endprocedure
+!unquoted procedure cha(e_label, e_techn, e_key="")
 !if (e_key != "")
 SAPKeyField(e_label, e_techn, $SAP_ICON_COLOR, cha)
 !else
 SAPField(e_label, e_techn, $SAP_ICON_COLOR, cha)
 !endif
-!endfunction
+!endprocedure
 
-!define field(e_label, e_techn) SAPField(e_label, e_techn, $SAP_ICON_COLOR, field)
-!unquoted function field(e_label, e_techn, e_key="")
+!unquoted procedure field(e_label, e_techn)
+SAPField(e_label, e_techn, $SAP_ICON_COLOR, field)
+!endprocedure
+!unquoted procedure field(e_label, e_techn, e_key="")
 !if (e_key != "")
 SAPKeyField(e_label, e_techn, $SAP_ICON_COLOR, field)
 !else
 SAPField(e_label, e_techn, $SAP_ICON_COLOR, field)
 !endif
-!endfunction
+!endprocedure
 
-!define uni(e_label, e_techn) SAPField(e_label, e_techn, $SAP_ICON_COLOR, uni)
-!unquoted function uni(e_label, e_techn, e_key="")
+!unquoted procedure uni(e_label, e_techn)
+SAPField(e_label, e_techn, $SAP_ICON_COLOR, uni)
+!endprocedure
+!unquoted procedure uni(e_label, e_techn, e_key="")
 !if (e_key != "")
 SAPKeyField(e_label, e_techn, $SAP_ICON_COLOR, uni)
 !else
 SAPField(e_label, e_techn, $SAP_ICON_COLOR, uni)
 !endif
-!endfunction
+!endprocedure
 
-!define tim(e_label, e_techn) SAPField(e_label, e_techn, $SAP_ICON_COLOR, time)
-!unquoted function tim(e_label, e_techn, e_key="")
+!unquoted procedure tim(e_label, e_techn)
+SAPField(e_label, e_techn, $SAP_ICON_COLOR, time)
+!endprocedure
+!unquoted procedure tim(e_label, e_techn, e_key="")
 !if (e_key != "")
 SAPKeyField(e_label, e_techn, $SAP_ICON_COLOR, time)
 !else
 SAPField(e_label, e_techn, $SAP_ICON_COLOR, time)
 !endif
-!endfunction
+!endprocedure
 
-!define rule1to1(e_out, e_in) SAPRule(1to1, e_out, e_in, $SAP_ICON_COLOR, direct)
-!define ruleAbap(e_out, e_in) SAPRule(abapRoutine, e_out, e_in, $SAP_ICON_COLOR, abap)
-!define ruleStart() SAPRule(startRoutine, void, "[]", $SAP_ICON_COLOR, abap)
-!define ruleStart(e_sudo) SAPRule(startRoutine, void, "[]", $SAP_ICON_COLOR, abap,e_sudo)
-!define ruleEnd() SAPRule(endRoutine, void, "[]", $SAP_ICON_COLOR, abap)
-!define ruleEnd(e_sudo) SAPRule(endRoutine, void, "[]", $SAP_ICON_COLOR, abap, e_sudo)
-!define ruleExpert() SAPRule(expertRoutine, void, "[]", $SAP_ICON_COLOR, abap)
-!define ruleExpert(e_sudo) SAPRule(expertRoutine, void, "[]", $SAP_ICON_COLOR, abap, e_sudo)
-!define ruleTimeDistribution(e_out, e_in) SAPRule(timeDistribution, e_out, e_in, $SAP_ICON_COLOR, distribute)
-!definelong ruleReadDSO(e_out, e_in, e_DSO)
+!unquoted procedure rule1to1(e_out, e_in)
+SAPRule(1to1, e_out, e_in, $SAP_ICON_COLOR, direct)
+!endprocedure
+!unquoted procedure ruleAbap(e_out, e_in)
+SAPRule(abapRoutine, e_out, e_in, $SAP_ICON_COLOR, abap)
+!endprocedure
+!unquoted procedure ruleStart()
+SAPRule(startRoutine, void, "[]", $SAP_ICON_COLOR, abap)
+!endprocedure
+!unquoted procedure ruleStart(e_sudo)
+SAPRule(startRoutine, void, "[]", $SAP_ICON_COLOR, abap,e_sudo)
+!endprocedure
+!unquoted procedure ruleEnd()
+SAPRule(endRoutine, void, "[]", $SAP_ICON_COLOR, abap)
+!endprocedure
+!unquoted procedure ruleEnd(e_sudo)
+SAPRule(endRoutine, void, "[]", $SAP_ICON_COLOR, abap, e_sudo)
+!endprocedure
+!unquoted procedure ruleExpert()
+SAPRule(expertRoutine, void, "[]", $SAP_ICON_COLOR, abap)
+!endprocedure
+!unquoted procedure ruleExpert(e_sudo)
+SAPRule(expertRoutine, void, "[]", $SAP_ICON_COLOR, abap, e_sudo)
+!endprocedure
+!unquoted procedure ruleTimeDistribution(e_out, e_in)
+SAPRule(timeDistribution, e_out, e_in, $SAP_ICON_COLOR, distribute)
+!endprocedure
+!unquoted procedure ruleReadDSO(e_out, e_in, e_DSO)
 !local $rule = "readDSO<" + e_DSO + ">"
 SAPRule($rule, e_out, e_in, $SAP_ICON_COLOR, dso)
-!enddefinelong
-!definelong ruleReadMD(e_out, e_in, e_MD)
+!endprocedure
+!unquoted procedure ruleReadMD(e_out, e_in, e_MD)
 !local $rule = "readMD<" + e_MD + ">"
 SAPRule($rule, e_out, e_in, $SAP_ICON_COLOR, infoobject)
-!enddefinelong
-!define ruleConstant(e_out, e_in) SAPRule(constant, e_out, e_in, $SAP_ICON_COLOR, constant)
-!define ruleFormula(e_out, e_in) SAPRule(formula, e_out, e_in, $SAP_ICON_COLOR, formula)
-!define ruleFormula(e_out, e_in, e_sudo) SAPRule(formula, e_out, e_in, $SAP_ICON_COLOR, formula, e_sudo)
-!define ruleTime(e_out, e_in) SAPRule(time, e_out, e_in, $SAP_ICON_COLOR, time)
+!endprocedure
+!unquoted procedure ruleConstant(e_out, e_in)
+SAPRule(constant, e_out, e_in, $SAP_ICON_COLOR, constant)
+!endprocedure
+!unquoted procedure ruleFormula(e_out, e_in)
+SAPRule(formula, e_out, e_in, $SAP_ICON_COLOR, formula)
+!endprocedure
+!unquoted procedure ruleFormula(e_out, e_in, e_sudo)
+SAPRule(formula, e_out, e_in, $SAP_ICON_COLOR, formula, e_sudo)
+!endprocedure
+!unquoted procedure ruleTime(e_out, e_in)
+SAPRule(time, e_out, e_in, $SAP_ICON_COLOR, time)
+!endprocedure
 
-!define functionGroup(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, abap, functionGroup)
-!define functionGroup(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, abap, functionGroup)
-!define functionGroup(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, abap, functionGroup)
+!unquoted procedure functionGroup(e_label, e_techn)
+SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, abap, functionGroup)
+!endprocedure
+!unquoted procedure functionGroup(e_label, e_techn, e_alias)
+SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, abap, functionGroup)
+!endprocedure
+!unquoted procedure functionGroup(e_label, e_techn, e_alias, e_descr)
+SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, abap, functionGroup)
+!endprocedure
 
-!define abapFunction(e_label, e_out, e_in) SAPRule(e_label, e_out, e_in, $SAP_ICON_COLOR, method)
-!define abapFunction(e_label, e_out, e_in, e_sudo) SAPRule(e_label, e_out, e_in, $SAP_ICON_COLOR, method, e_sudo)
+!unquoted procedure abapFunction(e_label, e_out, e_in)
+SAPRule(e_label, e_out, e_in, $SAP_ICON_COLOR, method)
+!endprocedure
+!unquoted procedure abapFunction(e_label, e_out, e_in, e_sudo)
+SAPRule(e_label, e_out, e_in, $SAP_ICON_COLOR, method, e_sudo)
+!endprocedure
 
-!define class(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, clazz, class)
-!define class(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, clazz, class)
-!define class(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, clazz, class)
+!unquoted procedure class(e_label, e_techn)
+SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, clazz, class)
+!endprocedure
+!unquoted procedure class(e_label, e_techn, e_alias)
+SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, clazz, class)
+!endprocedure
+!unquoted procedure class(e_label, e_techn, e_alias, e_descr)
+SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, clazz, class)
+!endprocedure
 
-!define method(e_label, e_out, e_in) SAPRule(e_label, e_out, e_in, $SAP_ICON_COLOR, method)
-!define method(e_label, e_out, e_in, e_sudo) SAPRule(e_label, e_out, e_in, $SAP_ICON_COLOR, method, e_sudo)
+!unquoted procedure method(e_label, e_out, e_in)
+SAPRule(e_label, e_out, e_in, $SAP_ICON_COLOR, method)
+!endprocedure
+!unquoted procedure method(e_label, e_out, e_in, e_sudo)
+SAPRule(e_label, e_out, e_in, $SAP_ICON_COLOR, method, e_sudo)
+!endprocedure
 
-!define analysisProcess(e_label, e_techn) SAPEntity(e_techn, e_label, e_techn, $SAP_ICON_COLOR, analysisProcess, analysisProcess)
-!define analysisProcess(e_label, e_techn, e_alias) SAPEntity(e_alias, e_label, e_techn, $SAP_ICON_COLOR, analysisProcess, analysisProcess)
-!define analysisProcess(e_label, e_techn, e_alias, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, analysisProcess, analysisProcess)
-!unquoted function analysisProcess($e_label, $e_techn, $e_grp="" )
-!if ($e_grp == "") 
+!unquoted procedure analysisProcess(e_label, e_techn)
+SAPEntity(e_techn, e_label, e_techn, $SAP_ICON_COLOR, analysisProcess, analysisProcess)
+!endprocedure
+!unquoted procedure analysisProcess(e_label, e_techn, e_alias)
+SAPEntity(e_alias, e_label, e_techn, $SAP_ICON_COLOR, analysisProcess, analysisProcess)
+!endprocedure
+!unquoted procedure analysisProcess(e_label, e_techn, e_alias, e_descr)
+SAPEntity(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, analysisProcess, analysisProcess)
+!endprocedure
+!unquoted procedure analysisProcess($e_label, $e_techn, $e_grp="" )
+!if ($e_grp == "")
  SAPClass($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, analysisProcess, analysisProcess)
 !else
  SAPEntity($e_techn, $e_label, $e_techn, $SAP_ICON_COLOR, analysisProcess, analysisProcess)
 !endif
-!endfunction
-!unquoted function analysisProcess($e_label, $e_techn, $e_grp="", $e_alias)
+!endprocedure
+!unquoted procedure analysisProcess($e_label, $e_techn, $e_grp="", $e_alias)
 !if ($e_grp == "")
  SAPClass($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, analysisProcess, analysisProcess)
 !else
  SAPEntity($e_alias, $e_label, $e_techn, $SAP_ICON_COLOR, analysisProcess, analysisProcess)
 !endif
-!endfunction
-!unquoted function analysisProcess($e_label, $e_techn, $e_grp="",$e_alias, $e_descr)
+!endprocedure
+!unquoted procedure analysisProcess($e_label, $e_techn, $e_grp="",$e_alias, $e_descr)
 !if ($e_grp == "")
  SAPClass($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, analysisProcess, analysisProcess)
 !else
  SAPEntity($e_alias, $e_label, $e_techn, $e_descr, $SAP_ICON_COLOR, analysisProcess, analysisProcess)
 !endif
-!endfunction
+!endprocedure
 
-!define infoSource(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, infoSource, infoSource)
-!define infoSource(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, infoSource, infoSource)
-!define infoSource(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, infoSource, infoSource)
+!unquoted procedure infoSource(e_label, e_techn)
+SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, infoSource, infoSource)
+!endprocedure
+!unquoted procedure infoSource(e_label, e_techn, e_alias)
+SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, infoSource, infoSource)
+!endprocedure
+!unquoted procedure infoSource(e_label, e_techn, e_alias, e_descr)
+SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, infoSource, infoSource)
+!endprocedure
 
-!define openHub(e_label, e_techn) SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, openHub, openHub)
-!define openHub(e_label, e_techn, e_alias) SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, openHub, openHub)
-!define openHub(e_label, e_techn, e_alias, e_descr) SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, openHub, openHub)
+!unquoted procedure openHub(e_label, e_techn)
+SAPClass(e_techn, e_label, e_techn, $SAP_ICON_COLOR, openHub, openHub)
+!endprocedure
+!unquoted procedure openHub(e_label, e_techn, e_alias)
+SAPClass(e_alias, e_label, e_techn, $SAP_ICON_COLOR, openHub, openHub)
+!endprocedure
+!unquoted procedure openHub(e_label, e_techn, e_alias, e_descr)
+SAPClass(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, openHub, openHub)
+!endprocedure
 
-!define query(e_label, e_techn) SAPEntity(e_techn, e_label, e_techn, $SAP_ICON_COLOR, query, query)
-!define query(e_label, e_techn, e_alias) SAPEntity(e_alias, e_label, e_techn, $SAP_ICON_COLOR, query, query)
-!define query(e_label, e_techn, e_alias, e_descr) SAPEntity(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, query, query)
+!unquoted procedure query(e_label, e_techn)
+SAPEntity(e_techn, e_label, e_techn, $SAP_ICON_COLOR, query, query)
+!endprocedure
+!unquoted procedure query(e_label, e_techn, e_alias)
+SAPEntity(e_alias, e_label, e_techn, $SAP_ICON_COLOR, query, query)
+!endprocedure
+!unquoted procedure query(e_label, e_techn, e_alias, e_descr)
+SAPEntity(e_alias, e_label, e_techn, e_descr, $SAP_ICON_COLOR, query, query)
+!endprocedure

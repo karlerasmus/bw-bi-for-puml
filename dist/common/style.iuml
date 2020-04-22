@@ -25,7 +25,7 @@ skinparam note {
   FontColor #424949
 }
 
-!definelong setPalette(p_bgcolor, p_bdrcolor)
+!unquoted procedure setPalette(p_bgcolor, p_bdrcolor)
 
 skinparam Arrow {
     Color p_bdrcolor
@@ -72,11 +72,11 @@ skinparam participant {
 
 skinparam SequenceLifeLineBorderColor p_bdrcolor
 
-!enddefinelong
+!endprocedure
 
 setPalette($SAP_BG_COLOR,$SAP_BORDER_COLOR)
 
-!definelong SAPEntityColoring(p_stereo, p_bgcolor, p_bdrcolor)
+!unquoted procedure SAPEntityColoring(p_stereo, p_bgcolor, p_bdrcolor)
 skinparam rectangle<<p_stereo>> {
     BackgroundColor p_bgcolor
     BorderColor p_bdrcolor
@@ -86,4 +86,4 @@ skinparam class<<p_stereo>> {
     BackgroundColor p_bgcolor
     BorderColor p_bdrcolor
 }
-!enddefinelong
+!endprocedure

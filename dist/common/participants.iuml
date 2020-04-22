@@ -1,30 +1,30 @@
 
 
-!definelong SAPEntity(e_alias, e_label, e_techn, e_color, e_sprite, e_stereo)
+!unquoted procedure SAPEntity(e_alias, e_label, e_techn, e_color, e_sprite, e_stereo)
 participant "<color:e_color><$e_sprite{scale=1.5}></color>\n<b>e_label\n//<size:$TECHN_FONT_SIZE>[e_techn]</size>//" as e_alias
-!enddefinelong
+!endprocedure
 
-!definelong SAPEntity(e_alias, e_label, e_techn, e_descr, e_color, e_sprite, e_stereo)
+!unquoted procedure SAPEntity(e_alias, e_label, e_techn, e_descr, e_color, e_sprite, e_stereo)
 particpant "<color:e_color><$e_sprite{scale=1.5}></color>\n<b>e_label\n//<size:$TECHN_FONT_SIZE>[e_techn]</size>//\n\n e_descr" as e_alias
-!enddefinelong
+!endprocedure
 
-!definelong SAPClass(e_alias, e_label, e_techn, e_color, e_sprite, e_stereo)
+!unquoted procedure SAPClass(e_alias, e_label, e_techn, e_color, e_sprite, e_stereo)
 participant "<color:e_color><$e_sprite{scale=1.5}></color>\n<b>e_label\n//<size:$TECHN_FONT_SIZE>[e_techn]</size>//" as e_alias
-!enddefinelong
+!endprocedure
 
-!definelong SAPClass(e_alias, e_label, e_techn, e_descr, e_color, e_sprite, e_stereo)
+!unquoted procedure SAPClass(e_alias, e_label, e_techn, e_descr, e_color, e_sprite, e_stereo)
 participant "<color:e_color><$e_sprite{scale=1.5}></color>\n<b>e_label\n//<size:$TECHN_FONT_SIZE>[e_techn]</size>//\n\n e_descr" as e_alias
-!enddefinelong
+!endprocedure
 
 
-!definelong component(e_label, e_techn)
+!unquoted procedure component(e_label, e_techn)
 participant "<b>e_label\n//<size:$TECHN_FONT_SIZE>[e_techn]</size>//" as e_techn
-!enddefinelong
+!endprocedure
 
-!definelong component(e_label, e_techn, e_alias)
+!unquoted procedure component(e_label, e_techn, e_alias)
 paricipant "<b>e_label\n//<size:$TECHN_FONT_SIZE>[e_techn]</size>//" as e_alias
-!enddefinelong
+!endprocedure
 
-!definelong component(e_label, e_techn, e_alias, e_descr)
+!unquoted procedure component(e_label, e_techn, e_alias, e_descr)
 participant "<b>e_label\n//<size:$TECHN_FONT_SIZE>[e_techn]</size>//\n\n e_descr" as e_alias
-!enddefinelong
+!endprocedure

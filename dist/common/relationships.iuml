@@ -1,311 +1,353 @@
 'Archimate style
 '-------------------------------
 
-!define Rel_(e_sourceAlias, e_targetAlias, e_label, e_direction="") e_sourceAlias e_direction e_targetAlias : "e_label"
+!unquoted procedure Rel_(e_sourceAlias, e_targetAlias, e_label, e_direction="")
+e_sourceAlias e_direction e_targetAlias : "e_label"
+!endprocedure
 
-!define rel_composition(e_From, e_To, e_label="is composed of") Rel_(e_From, e_To, e_label, "*--")
-!define rel_composition_u(e_From, e_To, e_label="is composed of") Rel_(e_From, e_To, e_label, "*-UP-")
-!define rel_composition_d(e_From, e_To, e_label="is composed of") Rel_(e_From, e_To, e_label, "*-DOWN-")
-!define rel_composition_l(e_From, e_To, e_label="is composed of") Rel_(e_From, e_To, e_label, "*-LEFT-")
-!define rel_composition_r(e_From, e_To, e_label="is composed of") Rel_(e_From, e_To, e_label, "*-RIGHT-")
+!unquoted procedure rel_composition(e_From, e_To, e_label="is composed of")
+Rel_(e_From, e_To, e_label, "*--")
+!endprocedure
+!unquoted procedure rel_composition_u(e_From, e_To, e_label="is composed of")
+Rel_(e_From, e_To, e_label, "*-UP-")
+!endprocedure
+!unquoted procedure rel_composition_d(e_From, e_To, e_label="is composed of")
+Rel_(e_From, e_To, e_label, "*-DOWN-")
+!endprocedure
+!unquoted procedure rel_composition_l(e_From, e_To, e_label="is composed of")
+Rel_(e_From, e_To, e_label, "*-LEFT-")
+!endprocedure
+!unquoted procedure rel_composition_r(e_From, e_To, e_label="is composed of")
+Rel_(e_From, e_To, e_label, "*-RIGHT-")
+!endprocedure
 
-!define rel_aggregation(e_From, e_To, e_label="is aggregation of") Rel_(e_From, e_To, e_label, "o--")
-!define rel_aggregation_u(e_From, e_To, e_label="is aggregation of") Rel_(e_From, e_To, e_label, "o-UP-")
-!define rel_aggregation_d(e_From, e_To, e_label="is aggregation of") Rel_(e_From, e_To, e_label, "o-DOWN-")
-!define rel_aggregation_l(e_From, e_To, e_label="is aggregation of") Rel_(e_From, e_To, e_label, "o-LEFT-")
-!define rel_aggregation_r(e_From, e_To, e_label="is aggregation of") Rel_(e_From, e_To, e_label, "o-RIGHT-")
+!unquoted procedure rel_aggregation(e_From, e_To, e_label="is aggregation of")
+Rel_(e_From, e_To, e_label, "o--")
+!endprocedure
+!unquoted procedure rel_aggregation_u(e_From, e_To, e_label="is aggregation of")
+Rel_(e_From, e_To, e_label, "o-UP-")
+!endprocedure
+!unquoted procedure rel_aggregation_d(e_From, e_To, e_label="is aggregation of")
+Rel_(e_From, e_To, e_label, "o-DOWN-")
+!endprocedure
+!unquoted procedure rel_aggregation_l(e_From, e_To, e_label="is aggregation of")
+Rel_(e_From, e_To, e_label, "o-LEFT-")
+!endprocedure
+!unquoted procedure rel_aggregation_r(e_From, e_To, e_label="is aggregation of")
+Rel_(e_From, e_To, e_label, "o-RIGHT-")
+!endprocedure
 
-!define rel_association(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "--")
-!define rel_association_u(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "-UP-")
-!define rel_association_d(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "-DOWN-")
-!define rel_association_l(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "-LEFT-")
-!define rel_association_r(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "-RIGHT-")
+!unquoted procedure rel_association(e_From, e_To, e_label="")
+Rel_(e_From, e_To, e_label, "--")
+!endprocedure
+!unquoted procedure rel_association_u(e_From, e_To, e_label="")
+Rel_(e_From, e_To, e_label, "-UP-")
+!endprocedure
+!unquoted procedure rel_association_d(e_From, e_To, e_label="")
+Rel_(e_From, e_To, e_label, "-DOWN-")
+!endprocedure
+!unquoted procedure rel_association_l(e_From, e_To, e_label="")
+Rel_(e_From, e_To, e_label, "-LEFT-")
+!endprocedure
+!unquoted procedure rel_association_r(e_From, e_To, e_label="")
+Rel_(e_From, e_To, e_label, "-RIGHT-")
+!endprocedure
 
-!define rel_flow(e_From, e_To, e_label="flows to") Rel_(e_From, e_To, e_label, "..>")
-!define rel_flow_u(e_From, e_To, e_label="flows to") Rel_(e_From, e_To, e_label, ".UP.>")
-!define rel_flow_d(e_From, e_To, e_label="flows to") Rel_(e_From, e_To, e_label, ".DOWN.>")
-!define rel_flow_l(e_From, e_To, e_label="flows to") Rel_(e_From, e_To, e_label, ".LEFT.>")
-!define rel_flow_r(e_From, e_To, e_label="flows to") Rel_(e_From, e_To, e_label, ".RIGHT.>")
+!unquoted procedure rel_flow(e_From, e_To, e_label="flows to")
+Rel_(e_From, e_To, e_label, "..>")
+!endprocedure
+!unquoted procedure rel_flow_u(e_From, e_To, e_label="flows to")
+Rel_(e_From, e_To, e_label, ".UP.>")
+!endprocedure
+!unquoted procedure rel_flow_d(e_From, e_To, e_label="flows to")
+Rel_(e_From, e_To, e_label, ".DOWN.>")
+!endprocedure
+!unquoted procedure rel_flow_l(e_From, e_To, e_label="flows to")
+Rel_(e_From, e_To, e_label, ".LEFT.>")
+!endprocedure
+!unquoted procedure rel_flow_r(e_From, e_To, e_label="flows to")
+Rel_(e_From, e_To, e_label, ".RIGHT.>")
+!endprocedure
 
 
 
 'For improved layout control
 '---------------------------------
-!unquoted function rel_hidden($e_from, $e_to, $e_dir="up")
+!unquoted procedure rel_hidden($e_from, $e_to, $e_dir="up")
 $e_from -[hidden]$e_dir- $e_to
-!endfunction
+!endprocedure
 
 'ERD Relationships
 '------------------------------
 '1 to many
-!definelong rel_1_to_n(e_from, e_to)
+!unquoted procedure rel_1_to_n(e_from, e_to)
 e_from ||--{ e_to
-!enddefinelong
-!definelong rel_1_to_n_u(e_from, e_to)
+!endprocedure
+!unquoted procedure rel_1_to_n_u(e_from, e_to)
 e_from ||-up-{ e_to
-!enddefinelong
-!definelong rel_1_to_n_l(e_from, e_to)
+!endprocedure
+!unquoted procedure rel_1_to_n_l(e_from, e_to)
 e_from ||-left-{ e_to
-!enddefinelong
-!definelong rel_1_to_n_r(e_from, e_to)
+!endprocedure
+!unquoted procedure rel_1_to_n_r(e_from, e_to)
 e_from ||-right-{ e_to
-!enddefinelong
-!definelong rel_1_to_n_d(e_from, e_to)
+!endprocedure
+!unquoted procedure rel_1_to_n_d(e_from, e_to)
 e_from ||-down-{ e_to
-!enddefinelong
+!endprocedure
 
-!definelong rel_1_to_n(e_from, e_to, e_message)
+!unquoted procedure rel_1_to_n(e_from, e_to, e_message)
 e_from ||--{ e_to : e_message
-!enddefinelong
-!definelong rel_1_to_n_u(e_from, e_to, e_message)
+!endprocedure
+!unquoted procedure rel_1_to_n_u(e_from, e_to, e_message)
 e_from ||-up-{ e_to : e_message
-!enddefinelong
-!definelong rel_1_to_n_l(e_from, e_to, e_message)
+!endprocedure
+!unquoted procedure rel_1_to_n_l(e_from, e_to, e_message)
 e_from ||-left-{ e_to : e_message
-!enddefinelong
-!definelong rel_1_to_n_r(e_from, e_to, e_message)
+!endprocedure
+!unquoted procedure rel_1_to_n_r(e_from, e_to, e_message)
 e_from ||-right-{ e_to : e_message
-!enddefinelong
-!definelong rel_1_to_n_d(e_from, e_to, e_message)
+!endprocedure
+!unquoted procedure rel_1_to_n_d(e_from, e_to, e_message)
 e_from ||-down-{ e_to : e_message
-!enddefinelong
+!endprocedure
 
 '0 to many
-!definelong rel_0_to_n(e_from, e_to)
+!unquoted procedure rel_0_to_n(e_from, e_to)
 e_from |o--{ e_to
-!enddefinelong
-!definelong rel_0_to_n_l(e_from, e_to)
+!endprocedure
+!unquoted procedure rel_0_to_n_l(e_from, e_to)
 e_from |o-left-{ e_to
-!enddefinelong
-!definelong rel_0_to_n_r(e_from, e_to)
+!endprocedure
+!unquoted procedure rel_0_to_n_r(e_from, e_to)
 e_from |o-right-{ e_to
-!enddefinelong
-!definelong rel_0_to_n_d(e_from, e_to)
+!endprocedure
+!unquoted procedure rel_0_to_n_d(e_from, e_to)
 e_from |o-down-{ e_to
-!enddefinelong
-!definelong rel_0_to_n_u(e_from, e_to)
+!endprocedure
+!unquoted procedure rel_0_to_n_u(e_from, e_to)
 e_from |o-up-{ e_to
-!enddefinelong
+!endprocedure
 
-!definelong rel_0_to_n(e_from, e_to, e_message)
+!unquoted procedure rel_0_to_n(e_from, e_to, e_message)
 e_from |o--{ e_to : e_message
-!enddefinelong
-!definelong rel_0_to_n_l(e_from, e_to, e_message)
+!endprocedure
+!unquoted procedure rel_0_to_n_l(e_from, e_to, e_message)
 e_from |o-left-{ e_to : e_message
-!enddefinelong
-!definelong rel_0_to_n_r(e_from, e_to, e_message)
+!endprocedure
+!unquoted procedure rel_0_to_n_r(e_from, e_to, e_message)
 e_from |o-right-{ e_to : e_message
-!enddefinelong
-!definelong rel_0_to_n_d(e_from, e_to, e_message)
+!endprocedure
+!unquoted procedure rel_0_to_n_d(e_from, e_to, e_message)
 e_from |o-down-{ e_to : e_message
-!enddefinelong
-!definelong rel_0_to_n_u(e_from, e_to, e_message)
+!endprocedure
+!unquoted procedure rel_0_to_n_u(e_from, e_to, e_message)
 e_from |o-up-{ e_to : e_message
-!enddefinelong
+!endprocedure
 
 'many to many
-!definelong rel_n_to_n(e_from, e_to)
+!unquoted procedure rel_n_to_n(e_from, e_to)
 e_from }--{ e_to
-!enddefinelong
-!definelong rel_n_to_n_l(e_from, e_to)
+!endprocedure
+!unquoted procedure rel_n_to_n_l(e_from, e_to)
 e_from }-left-{ e_to
-!enddefinelong
-!definelong rel_n_to_n_r(e_from, e_to)
+!endprocedure
+!unquoted procedure rel_n_to_n_r(e_from, e_to)
 e_from }-right-{ e_to
-!enddefinelong
-!definelong rel_n_to_n_u(e_from, e_to)
+!endprocedure
+!unquoted procedure rel_n_to_n_u(e_from, e_to)
 e_from }-up-{ e_to
-!enddefinelong
-!definelong rel_n_to_n_d(e_from, e_to)
+!endprocedure
+!unquoted procedure rel_n_to_n_d(e_from, e_to)
 e_from }-down-{ e_to
-!enddefinelong
+!endprocedure
 
-!definelong rel_n_to_n(e_from, e_to, e_message)
+!unquoted procedure rel_n_to_n(e_from, e_to, e_message)
 e_from }--{ e_to : e_message
-!enddefinelong
-!definelong rel_n_to_n_l(e_from, e_to, e_message)
+!endprocedure
+!unquoted procedure rel_n_to_n_l(e_from, e_to, e_message)
 e_from }-left-{ e_to : e_message
-!enddefinelong
-!definelong rel_n_to_n_r(e_from, e_to, e_message)
+!endprocedure
+!unquoted procedure rel_n_to_n_r(e_from, e_to, e_message)
 e_from }-right-{ e_to : e_message
-!enddefinelong
-!definelong rel_n_to_n_d(e_from, e_to, e_message)
+!endprocedure
+!unquoted procedure rel_n_to_n_d(e_from, e_to, e_message)
 e_from }-down-{ e_to : e_message
-!enddefinelong
-!definelong rel_n_to_n_u(e_from, e_to, e_message)
+!endprocedure
+!unquoted procedure rel_n_to_n_u(e_from, e_to, e_message)
 e_from }-up-{ e_to : e_message
-!enddefinelong
+!endprocedure
 
 'unknown
-!definelong rel_unknown(e_from, e_to)
+!unquoted procedure rel_unknown(e_from, e_to)
 e_from -- e_to
-!enddefinelong
-!definelong rel_unknown(e_from, e_to, e_message)
+!endprocedure
+!unquoted procedure rel_unknown(e_from, e_to, e_message)
 e_from -- e_to : e_message
-!enddefinelong
+!endprocedure
 
 'many to 1
-!definelong rel_n_to_1(e_from, e_to)
+!unquoted procedure rel_n_to_1(e_from, e_to)
 e_from }--|| e_to
-!enddefinelong
-!definelong rel_n_to_1_u(e_from, e_to)
+!endprocedure
+!unquoted procedure rel_n_to_1_u(e_from, e_to)
 e_from }-up-|| e_to
-!enddefinelong
-!definelong rel_n_to_1_d(e_from, e_to)
+!endprocedure
+!unquoted procedure rel_n_to_1_d(e_from, e_to)
 e_from }-down-|| e_to
-!enddefinelong
-!definelong rel_n_to_1_l(e_from, e_to)
+!endprocedure
+!unquoted procedure rel_n_to_1_l(e_from, e_to)
 e_from }-left-|| e_to
-!enddefinelong
-!definelong rel_n_to_1_r(e_from, e_to)
+!endprocedure
+!unquoted procedure rel_n_to_1_r(e_from, e_to)
 e_from }-right-|| e_to
-!enddefinelong
+!endprocedure
 
 
-!definelong rel_n_to_1(e_from, e_to, e_message)
+!unquoted procedure rel_n_to_1(e_from, e_to, e_message)
 e_from }--|| e_to : e_message
-!enddefinelong
-!definelong rel_n_to_1_u(e_from, e_to, e_message)
+!endprocedure
+!unquoted procedure rel_n_to_1_u(e_from, e_to, e_message)
 e_from }-up-|| e_to : e_message
-!enddefinelong
-!definelong rel_n_to_1_l(e_from, e_to, e_message)
+!endprocedure
+!unquoted procedure rel_n_to_1_l(e_from, e_to, e_message)
 e_from }-left-|| e_to : e_message
-!enddefinelong
-!definelong rel_n_to_1_r(e_from, e_to, e_message)
+!endprocedure
+!unquoted procedure rel_n_to_1_r(e_from, e_to, e_message)
 e_from }-right-|| e_to : e_message
-!enddefinelong
-!definelong rel_n_to_1_d(e_from, e_to, e_message)
+!endprocedure
+!unquoted procedure rel_n_to_1_d(e_from, e_to, e_message)
 e_from }-down-|| e_to : e_message
-!enddefinelong
+!endprocedure
 
 'many to 0
-!definelong rel_n_to_0(e_from, e_to)
+!unquoted procedure rel_n_to_0(e_from, e_to)
 e_from }--o| e_to
-!enddefinelong
-!definelong rel_n_to_0_l(e_from, e_to)
+!endprocedure
+!unquoted procedure rel_n_to_0_l(e_from, e_to)
 e_from }-left-o| e_to
-!enddefinelong
-!definelong rel_n_to_0_r(e_from, e_to)
+!endprocedure
+!unquoted procedure rel_n_to_0_r(e_from, e_to)
 e_from }-right-o| e_to
-!enddefinelong
-!definelong rel_n_to_0_u(e_from, e_to)
+!endprocedure
+!unquoted procedure rel_n_to_0_u(e_from, e_to)
 e_from }-up-o| e_to
-!enddefinelong
-!definelong rel_n_to_0_d(e_from, e_to)
+!endprocedure
+!unquoted procedure rel_n_to_0_d(e_from, e_to)
 e_from }-down-o| e_to
-!enddefinelong
+!endprocedure
 
-!definelong rel_n_to_0(e_from, e_to, e_message)
+!unquoted procedure rel_n_to_0(e_from, e_to, e_message)
 e_from }--o| e_to : e_message
-!enddefinelong
-!definelong rel_n_to_0_l(e_from, e_to, e_message)
+!endprocedure
+!unquoted procedure rel_n_to_0_l(e_from, e_to, e_message)
 e_from }-left-o| e_to : e_message
-!enddefinelong
-!definelong rel_n_to_0_r(e_from, e_to, e_message)
+!endprocedure
+!unquoted procedure rel_n_to_0_r(e_from, e_to, e_message)
 e_from }-right-o| e_to : e_message
-!enddefinelong
-!definelong rel_n_to_0_u(e_from, e_to, e_message)
+!endprocedure
+!unquoted procedure rel_n_to_0_u(e_from, e_to, e_message)
 e_from }-up-o| e_to : e_message
-!enddefinelong
-!definelong rel_n_to_0_d(e_from, e_to, e_message)
+!endprocedure
+!unquoted procedure rel_n_to_0_d(e_from, e_to, e_message)
 e_from }-down-o| e_to : e_message
-!enddefinelong
+!endprocedure
 
 'many to 1
-!definelong rel_1_to_1(e_from, e_to)
+!unquoted procedure rel_1_to_1(e_from, e_to)
 e_from ||--|| e_to
-!enddefinelong
-!definelong rel_1_to_1_d(e_from, e_to)
+!endprocedure
+!unquoted procedure rel_1_to_1_d(e_from, e_to)
 e_from ||-down-|| e_to
-!enddefinelong
-!definelong rel_1_to_1_u(e_from, e_to)
+!endprocedure
+!unquoted procedure rel_1_to_1_u(e_from, e_to)
 e_from ||-up-|| e_to
-!enddefinelong
-!definelong rel_1_to_1_l(e_from, e_to)
+!endprocedure
+!unquoted procedure rel_1_to_1_l(e_from, e_to)
 e_from ||-left-|| e_to
-!enddefinelong
-!definelong rel_1_to_1_r(e_from, e_to)
+!endprocedure
+!unquoted procedure rel_1_to_1_r(e_from, e_to)
 e_from ||-right-|| e_to
-!enddefinelong
+!endprocedure
 
-!definelong rel_1_to_1(e_from, e_to, e_message)
+!unquoted procedure rel_1_to_1(e_from, e_to, e_message)
 e_from ||--|| e_to : e_message
-!enddefinelong
-!definelong rel_1_to_1_u(e_from, e_to, e_message)
+!endprocedure
+!unquoted procedure rel_1_to_1_u(e_from, e_to, e_message)
 e_from ||-up-|| e_to : e_message
-!enddefinelong
-!definelong rel_1_to_1_l(e_from, e_to, e_message)
+!endprocedure
+!unquoted procedure rel_1_to_1_l(e_from, e_to, e_message)
 e_from ||-left-|| e_to : e_message
-!enddefinelong
-!definelong rel_1_to_1_r(e_from, e_to, e_message)
+!endprocedure
+!unquoted procedure rel_1_to_1_r(e_from, e_to, e_message)
 e_from ||-right-|| e_to : e_message
-!enddefinelong
-!definelong rel_1_to_1_d(e_from, e_to, e_message)
+!endprocedure
+!unquoted procedure rel_1_to_1_d(e_from, e_to, e_message)
 e_from ||-down-|| e_to : e_message
-!enddefinelong
+!endprocedure
 
 '0 to 1
-!definelong rel_0_to_1(e_from, e_to)
+!unquoted procedure rel_0_to_1(e_from, e_to)
 e_from |o--|| e_to
-!enddefinelong
-!definelong rel_0_to_1_d(e_from, e_to)
+!endprocedure
+!unquoted procedure rel_0_to_1_d(e_from, e_to)
 e_from |o-down-|| e_to
-!enddefinelong
-!definelong rel_0_to_1_u(e_from, e_to)
+!endprocedure
+!unquoted procedure rel_0_to_1_u(e_from, e_to)
 e_from |o-up-|| e_to
-!enddefinelong
-!definelong rel_0_to_1_l(e_from, e_to)
+!endprocedure
+!unquoted procedure rel_0_to_1_l(e_from, e_to)
 e_from |o-left-|| e_to
-!enddefinelong
-!definelong rel_0_to_1_r(e_from, e_to)
+!endprocedure
+!unquoted procedure rel_0_to_1_r(e_from, e_to)
 e_from |o-right-|| e_to
-!enddefinelong
+!endprocedure
 
-!definelong rel_0_to_1(e_from, e_to, e_message)
+!unquoted procedure rel_0_to_1(e_from, e_to, e_message)
 e_from |o--|| e_to : e_message
-!enddefinelong
-!definelong rel_0_to_1_u(e_from, e_to, e_message)
+!endprocedure
+!unquoted procedure rel_0_to_1_u(e_from, e_to, e_message)
 e_from |o-up-|| e_to : e_message
-!enddefinelong
-!definelong rel_0_to_1_l(e_from, e_to, e_message)
+!endprocedure
+!unquoted procedure rel_0_to_1_l(e_from, e_to, e_message)
 e_from |o-left-|| e_to : e_message
-!enddefinelong
-!definelong rel_0_to_1_r(e_from, e_to, e_message)
+!endprocedure
+!unquoted procedure rel_0_to_1_r(e_from, e_to, e_message)
 e_from |o-right-|| e_to : e_message
-!enddefinelong
-!definelong rel_0_to_1_d(e_from, e_to, e_message)
+!endprocedure
+!unquoted procedure rel_0_to_1_d(e_from, e_to, e_message)
 e_from |o-down-|| e_to : e_message
-!enddefinelong
+!endprocedure
 
 '1 to 0
-!definelong rel_1_to_0(e_from, e_to)
+!unquoted procedure rel_1_to_0(e_from, e_to)
 e_from ||--o| e_to
-!enddefinelong
-!definelong rel_1_to_0_d(e_from, e_to)
+!endprocedure
+!unquoted procedure rel_1_to_0_d(e_from, e_to)
 e_from ||-down-o| e_to
-!enddefinelong
-!definelong rel_1_to_0_u(e_from, e_to)
+!endprocedure
+!unquoted procedure rel_1_to_0_u(e_from, e_to)
 e_from ||-up-o| e_to
-!enddefinelong
-!definelong rel_1_to_0_l(e_from, e_to)
+!endprocedure
+!unquoted procedure rel_1_to_0_l(e_from, e_to)
 e_from ||-left-o| e_to
-!enddefinelong
-!definelong rel_1_to_0_r(e_from, e_to)
+!endprocedure
+!unquoted procedure rel_1_to_0_r(e_from, e_to)
 e_from ||-right-o| e_to
-!enddefinelong
+!endprocedure
 
-!definelong rel_1_to_0(e_from, e_to, e_message)
+!unquoted procedure rel_1_to_0(e_from, e_to, e_message)
 e_from ||--o| e_to : e_message
-!enddefinelong
-!definelong rel_1_to_0_d(e_from, e_to, e_message)
+!endprocedure
+!unquoted procedure rel_1_to_0_d(e_from, e_to, e_message)
 e_from ||-down-o| e_to : e_message
-!enddefinelong
-!definelong rel_1_to_0_u(e_from, e_to, e_message)
+!endprocedure
+!unquoted procedure rel_1_to_0_u(e_from, e_to, e_message)
 e_from ||-up-o| e_to : e_message
-!enddefinelong
-!definelong rel_1_to_0_l(e_from, e_to, e_message)
+!endprocedure
+!unquoted procedure rel_1_to_0_l(e_from, e_to, e_message)
 e_from ||-left-o| e_to : e_message
-!enddefinelong
-!definelong rel_1_to_0_r(e_from, e_to, e_message)
+!endprocedure
+!unquoted procedure rel_1_to_0_r(e_from, e_to, e_message)
 e_from ||-right-o| e_to : e_message
-!enddefinelong
+!endprocedure

@@ -1,7 +1,7 @@
 
 ' Layout
 ' ##################################
-!definelong FOR_DISCUSSION
+!procedure FOR_DISCUSSION
     skinparam backgroundColor white
     skinparam handwritten true
 '   skinparam defaultFontName "Comic Sans MS"
@@ -24,10 +24,13 @@
 '	skinparam defaultFontName "Salsa"
 '	skinparam defaultFontName "Mogra"
 '	skinparam defaultFontName "Amatic SC"
-	
+
     center footer For discussion, needs to be validated
-!enddefinelong
+!endprocedure
 
-!define LAYOUT_TOP_DOWN top to bottom direction
-!define LAYOUT_LEFT_RIGHT left to right direction
-
+!procedure LAYOUT_TOP_DOWN
+top to bottom direction
+!endprocedure
+!procedure LAYOUT_LEFT_RIGHT
+left to right direction
+!endprocedure

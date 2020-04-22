@@ -7,51 +7,47 @@
 hide circle
 hide empty members
 
-!definelong SAPEntity(e_alias, e_label, e_techn, e_color, e_sprite, e_stereo)
+!unquoted procedure SAPEntity(e_alias, e_label, e_techn, e_color, e_sprite, e_stereo)
 rectangle "<color:e_color><$e_sprite{scale=1.5}></color>\n<b>e_label\n//<size:$TECHN_FONT_SIZE>[e_techn]</size>//" <<e_stereo>> as e_alias
-!enddefinelong
+!endprocedure
 
-!definelong SAPEntity(e_alias, e_label, e_techn, e_descr, e_color, e_sprite, e_stereo)
+!unquoted procedure SAPEntity(e_alias, e_label, e_techn, e_descr, e_color, e_sprite, e_stereo)
 rectangle "<color:e_color><$e_sprite{scale=1.5}></color>\n<b>e_label\n//<size:$TECHN_FONT_SIZE>[e_techn]</size>//\n\n e_descr" <<e_stereo>> as e_alias
-!enddefinelong
+!endprocedure
 
-!definelong SAPClass(e_alias, e_label, e_techn, e_color, e_sprite, e_stereo)
+!unquoted procedure SAPClass(e_alias, e_label, e_techn, e_color, e_sprite, e_stereo)
 class "<color:e_color><$e_sprite{scale=1.5}></color>\n<b>e_label\n//<size:$TECHN_FONT_SIZE>[e_techn]</size>//" as e_alias <<e_stereo>>
-!enddefinelong
+!endprocedure
 
-!definelong SAPClass(e_alias, e_label, e_techn, e_descr, e_color, e_sprite, e_stereo)
+!unquoted procedure SAPClass(e_alias, e_label, e_techn, e_descr, e_color, e_sprite, e_stereo)
 class "<color:e_color><$e_sprite{scale=1.5}></color>\n<b>e_label\n//<size:$TECHN_FONT_SIZE>[e_techn]</size>//\n\n e_descr" as e_alias <<e_stereo>>
-!enddefinelong
+!endprocedure
 
-!definelong SAPField(e_label, e_techn, e_color, e_sprite)
+!unquoted procedure SAPField(e_label, e_techn, e_color, e_sprite)
 {field} <color:e_color><$e_sprite></color>     e_label [e_techn]
-!enddefinelong
+!endprocedure
 
-!definelong SAPKeyField(e_label, e_techn, e_color, e_sprite)
+!unquoted procedure SAPKeyField(e_label, e_techn, e_color, e_sprite)
 {field} <color:e_color><$e_sprite><$fkey></color> e_label [e_techn]
-!enddefinelong
+!endprocedure
 
-!definelong SAPRule(e_label, e_out, e_in, e_color, e_sprite)
+!unquoted procedure SAPRule(e_label, e_out, e_in, e_color, e_sprite)
 {method} <color:e_color><$e_sprite></color>\t e_out:e_label(e_in)
-!enddefinelong
-!definelong SAPRule(e_label, e_out, e_in, e_color, e_sprite, e_sudo)
+!endprocedure
+!unquoted procedure SAPRule(e_label, e_out, e_in, e_color, e_sprite, e_sudo)
 ....
 {method} <color:e_color><$e_sprite></color>\t e_out:e_label(e_in) \n\t{\ne_sudo\n\t}
 ....
-!enddefinelong
+!endprocedure
 
-!definelong component(e_label, e_techn)
+!unquoted procedure component(e_label, e_techn)
 component "<b>e_label\n//<size:$TECHN_FONT_SIZE>[e_techn]</size>//" as e_techn
-!enddefinelong
+!endprocedure
 
-!definelong component(e_label, e_techn, e_alias)
+!unquoted procedure component(e_label, e_techn, e_alias)
 component "<b>e_label\n//<size:$TECHN_FONT_SIZE>[e_techn]</size>//" as e_alias
-!enddefinelong
+!endprocedure
 
-!definelong component(e_label, e_techn, e_alias, e_descr)
+!unquoted procedure component(e_label, e_techn, e_alias, e_descr)
 component "<b>e_label\n//<size:$TECHN_FONT_SIZE>[e_techn]</size>//\n\n e_descr" as e_alias
-!enddefinelong
-
-
-
-
+!endprocedure
