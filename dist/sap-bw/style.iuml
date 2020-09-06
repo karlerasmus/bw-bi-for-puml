@@ -23,7 +23,7 @@ SAPEntityColoring(analysisProcess, p_bgcolor, p_bdrcolor)
 SAPEntityColoring(infoSource, p_bgcolor, p_bdrcolor)
 SAPEntityColoring(openHub, p_bgcolor, p_bdrcolor)
 SAPEntityColoring(sapSystem, p_bgcolor, p_bdrcolor)
-
+SAPEntityColoring(query, p_bgcolor, p_bdrcolor)
 !endprocedure
 
 setBWpalette($SAP_BG_COLOR, $SAP_BORDER_COLOR)
