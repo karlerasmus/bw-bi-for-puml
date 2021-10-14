@@ -1,27 +1,27 @@
 'SPDX-License-Identifier: GPL-3.0-or-later
 
-!unquoted procedure stagingLayer()
-component "<b>Staging Layer" as stagingLayer #FADBD8
+!unquoted procedure stagingLayer($i_alias="stagingLayer")
+component "<b>Staging Layer" as $i_alias #FADBD8
 !endprocedure
 
-!unquoted procedure dataMartLayer()
-component "<b>Data Mart Layer" as dataMartLayer #F6DDCC
+!unquoted procedure dataMartLayer($i_alias="dataMartLayer")
+component "<b>Data Mart Layer" as $i_alias #F6DDCC
 !endprocedure
 
-!unquoted procedure virtualDataMartLayer()
-component "<b>Virtual Data\n<b>Mart Layer" as virtualDataMartLayer #EAF2F8
+!unquoted procedure virtualDataMartLayer($i_alias="virtualDataMartLayer")
+component "<b>Virtual Data\n<b>Mart Layer" as $i_alias #EAF2F8
 !endprocedure
 
-!unquoted procedure dataWarehouseLayer()
-component "<b>Data Warehouse Layer" as dataWarehouseLayer #D1F2EB
+!unquoted procedure dataWarehouseLayer($i_alias="dataWarehouseLayer")
+component "<b>Data Warehouse Layer" as $i_alias #D1F2EB
 !endprocedure
 
-!unquoted procedure corporateMemory()
-component "<b>Corporate Memory" as corporateMemory #FCF3CF
+!unquoted procedure corporateMemory($i_alias="corporateMemory")
+component "<b>Corporate Memory" as $i_alias #FCF3CF
 !endprocedure
 
-!unquoted procedure queryLayer()
-component "<b>BEx Queries" as queryLayer #F6DDCC
+!unquoted procedure queryLayer($i_alias="queryLayer")
+component "<b>BEx Queries" as $i_alias #F6DDCC
 !endprocedure
 
 !unquoted procedure sapSystem(e_label, e_techn)
